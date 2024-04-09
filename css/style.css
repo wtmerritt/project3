@@ -358,7 +358,7 @@ header {
 
 /* Explore */
 .explore {
-  background: #fffffd;
+  background-color: #fffffd;
   padding: 20px 0 30px 0;
 }
 .explore h1 {
@@ -368,29 +368,57 @@ header {
 .explore p {
   display: flex;
   justify-content: center;
-  align-items: center;
   font-size: 20px;
   padding: 20px 20px 0 20px;
 }
 .explore .explorebutton {
-  border-radius: 25px;
+  border-radius: 30px;
   border: none;
   background-color: #ff79da;
   color: white;
   font-weight: bold;
   height: 60px;
-  width: 250px;
-  margin: 30px;
+  width: 280px;
+  margin: 30px 60px 30px 50px;
   font-size: 20px;
+  position: relative;
+  z-index: 1;
+}
+.explore .explorebutton:hover::after {
+  opacity: 1;
+}
+.explore .explorebutton::after {
+  content: "";
+  border-radius: 25px;
+  border: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #ff13be;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 250ms;
 }
 @media (min-width: 600px) {
   .explore {
     background-color: orange;
   }
+  .explore .explorebutton {
+    top: 50%;
+    left: 18%;
+    position: relative;
+  }
 }
 @media (min-width: 992px) {
   .explore {
     background-color: red;
+  }
+  .explore .explorebutton {
+    top: 50%;
+    left: 35%;
+    position: relative;
   }
 }
 
