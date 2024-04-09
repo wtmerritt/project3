@@ -1,0 +1,11 @@
+/* Media Query */
+
+
+@mixin breakpoint($user-value) {
+  $my-app: map-get($breakpoints, $user-value);
+  @if $my-app {
+    @media (#{$my-app}) {
+      @content;
+    }
+  }
+}
