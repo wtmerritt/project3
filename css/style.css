@@ -536,4 +536,24 @@ header {
   }
 }
 
+/* Section for Restaurant Menus */
+.restaurants {
+  padding: 20px 0 20px 20px;
+}
+.restaurants .menus {
+  display: flex;
+  flex-wrap: wrap;
+}
+.restaurants .menu:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  background-color: #defbff;
+  cursor: pointer;
+}
+.restaurants .menu img {
+  object-fit: cover;
+  border-radius: 25px;
+  width: 310px;
+  height: 180px;
+}
+
 /*# sourceMappingURL=style.css.map */
