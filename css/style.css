@@ -543,6 +543,15 @@ header {
 .restaurants .menus {
   display: flex;
   flex-wrap: wrap;
+  gap: 20px;
+}
+.restaurants .menu {
+  background-color: white;
+  box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 1.3s;
+  border-radius: 20px;
+  width: 310px;
+  height: 250px;
 }
 .restaurants .menu:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
@@ -550,10 +559,26 @@ header {
   cursor: pointer;
 }
 .restaurants .menu img {
-  object-fit: cover;
   border-radius: 25px;
-  width: 310px;
-  height: 180px;
+  width: 100%;
+  height: 70%;
+}
+.restaurants .content h3 {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  padding-left: 15px;
+  margin-bottom: 0;
+}
+.restaurants .content p {
+  font-size: 16px;
+  margin-top: 8px;
+  margin-bottom: 15px;
+  padding-left: 15px;
+}
+.restaurants .content i {
+  font-size: 20px;
+  margin-right: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */
