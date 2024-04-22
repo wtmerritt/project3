@@ -618,6 +618,8 @@ nav ul a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #f2f2f2;
+  border-radius: 20px;
 }
 .fullmenu img {
   margin-top: -30px;
@@ -631,10 +633,51 @@ nav ul a:hover {
   font-style: italic;
   font-size: 30px;
   width: 100%;
-  padding-left: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.fullmenu h2 {
+  width: 100%;
+  padding-left: 25px;
+  color: grey;
+  font-size: 20px;
+  margin: 0 0;
 }
 .fullmenu i {
-  font-size: 30px;
+  font-size: 25px;
+}
+.fullmenu .entrees {
+  width: 100%;
+  margin-bottom: 5px;
+}
+.fullmenu .entrees .content {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  font-size: 20px;
+  margin: 15px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  background-color: white;
+  border-radius: 15px;
+}
+.fullmenu .entrees .content h3 {
+  font-size: 20px;
+  margin-bottom: 0px;
+}
+.fullmenu .entrees .content p {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  margin-top: 4px;
+  color: grey;
+}
+.fullmenu .entrees .content strong {
+  font-size: 15px;
+  color: black;
+}
+.fullmenu .entrees .content i {
+  font-size: 15px;
+  color: black;
   padding-right: 20px;
 }
 
