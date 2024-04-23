@@ -620,6 +620,10 @@ nav ul a:hover {
   align-items: center;
   background-color: #f2f2f2;
   border-radius: 20px;
+  /* ENTREES */
+  /* MAIN DISHES */
+  /* DESSERTS */
+  /* Order Button */
 }
 .fullmenu img {
   margin-top: -30px;
@@ -679,6 +683,105 @@ nav ul a:hover {
   font-size: 15px;
   color: black;
   padding-right: 20px;
+}
+.fullmenu .maindishes {
+  width: 100%;
+  margin-bottom: 5px;
+}
+.fullmenu .maindishes .content {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  font-size: 20px;
+  margin: 15px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  background-color: white;
+  border-radius: 15px;
+}
+.fullmenu .maindishes .content h3 {
+  font-size: 20px;
+  margin-bottom: 0px;
+}
+.fullmenu .maindishes .content p {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  margin-top: 4px;
+  color: grey;
+}
+.fullmenu .maindishes .content strong {
+  font-size: 15px;
+  color: black;
+}
+.fullmenu .maindishes .content i {
+  font-size: 15px;
+  color: black;
+  padding-right: 20px;
+}
+.fullmenu .desserts {
+  width: 100%;
+  margin-bottom: 5px;
+}
+.fullmenu .desserts .content {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  font-size: 20px;
+  margin: 15px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  background-color: white;
+  border-radius: 15px;
+}
+.fullmenu .desserts .content h3 {
+  font-size: 20px;
+  margin-bottom: 0px;
+}
+.fullmenu .desserts .content p {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  margin-top: 4px;
+  color: grey;
+}
+.fullmenu .desserts .content strong {
+  font-size: 15px;
+  color: black;
+}
+.fullmenu .desserts .content i {
+  font-size: 15px;
+  color: black;
+  padding-right: 20px;
+}
+.fullmenu .order {
+  border-radius: 30px;
+  border: none;
+  background-image: linear-gradient(#ff79da, #9356dc);
+  color: white;
+  height: 60px;
+  width: 230px;
+  margin: 30px 0px 30px 0px;
+  font-size: 18px;
+  position: relative;
+  z-index: 1;
+}
+.fullmenu .order:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  background-image: linear-gradient(#ff93e1, #a16be0);
+  cursor: pointer;
+}
+.fullmenu .order::after {
+  content: "";
+  border-radius: 25px;
+  border: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #ff13be;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 250ms;
 }
 
 /*# sourceMappingURL=style.css.map */
