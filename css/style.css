@@ -425,6 +425,12 @@ header {
   display: flex;
   padding: 20px 0 20px 20px;
 }
+.options img {
+  margin-top: -30px;
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
 .options .selection .restaurant {
   display: flex;
   align-items: center;
@@ -625,26 +631,24 @@ nav ul a:hover {
   flex-direction: column;
   align-items: center;
   background-color: #f2f2f2;
-  border-radius: 20px;
+  border-radius: 30px;
+  position: relative;
+  margin-top: -30px;
   /* ENTREES */
   /* MAIN DISHES */
   /* DESSERTS */
   /* Order Button */
 }
-.fullmenu img {
-  margin-top: -30px;
-  height: 200px;
-  width: 100%;
-  object-fit: cover;
-}
 .fullmenu h1 {
   display: flex;
   justify-content: space-between;
-  font-style: italic;
   font-size: 30px;
   width: 100%;
   padding-left: 25px;
   padding-right: 25px;
+  padding-left: 20px;
+  font-family: Shrikhand;
+  font-weight: 500;
 }
 .fullmenu h2 {
   width: 100%;
@@ -714,6 +718,9 @@ nav ul a:hover {
   font-size: 15px;
   margin-top: 4px;
   color: grey;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .fullmenu .maindishes .content strong {
   font-size: 15px;
@@ -798,9 +805,10 @@ nav ul a:hover {
   padding-top: 15px;
   padding-bottom: 15px;
 }
-.footer h4 {
+.footer h2 {
   padding-left: 20px;
   font-family: Shrikhand;
+  font-size: 18px;
   font-weight: 500;
 }
 .footer .ulist {
@@ -821,6 +829,39 @@ nav ul a:hover {
 .footer .link {
   margin-left: -17px;
   margin-bottom: 12px;
+}
+
+/* Contact Form */
+.contact__group {
+  padding-left: 20px;
+  font-size: 25px;
+}
+.contact__group input {
+  border: 2px solid #6300a0;
+  border-radius: 15px;
+  color: #6300a0;
+  padding: 10px 10px;
+  font-size: 25px;
+  width: 100%;
+}
+.contact__group input:focus {
+  border: 2px solid #6300a0;
+}
+.contact__group input:not(:focus):invalid {
+  background: #b20a37;
+  border: 2px solid #b20a37;
+  color: #fff;
+}
+.contact button {
+  margin: 20px 20px;
+  border-radius: 10px;
+  font-size: 20px;
+  background-image: linear-gradient(#ff79da, #9356dc);
+  color: white;
+}
+.contact button:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  background-image: linear-gradient(#ff93e1, #a16be0);
 }
 
 /*# sourceMappingURL=style.css.map */

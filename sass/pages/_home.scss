@@ -107,6 +107,13 @@ header {
     padding: 20px 0 20px 20px;
   }
 
+  img {
+    margin-top: -30px;
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+  }
+
   .selection .restaurant {
     display: flex;
     align-items: center;
@@ -329,22 +336,23 @@ nav {
   flex-direction: column;
   align-items: center;
   background-color: #f2f2f2;
-  border-radius: 20px;
+  border-radius: 30px;
+  position: relative;
+  margin-top: -30px;
 
-  img {
-    margin-top: -30px;
-    height: 200px;
-    width: 100%;
-    object-fit: cover;
-  }
   h1 {
     display: flex;
     justify-content: space-between;
-    font-style: italic;
+    // font-style: italic;
     font-size: 30px;
     width: 100%;
     padding-left: 25px;
     padding-right: 25px;
+
+    padding-left: 20px;
+    font-family: Shrikhand;
+    // font-size: 18px;
+    font-weight: 500;
   }
 
   h2 {
@@ -405,6 +413,10 @@ nav {
     width: 100%;
     margin-bottom: 5px;
 
+    .maindish {
+      // width: 300px;
+    }
+
     .content {
       display: flex;
       flex-direction: column;
@@ -414,6 +426,7 @@ nav {
       box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
       background-color: white;
       border-radius: 15px;
+      // width: 300px;
 
       h3 {
         font-size: 20px;
@@ -426,6 +439,12 @@ nav {
         font-size: 15px;
         margin-top: 4px;
         color: grey;
+        // minwidth: 200px;
+
+        // width: 250px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
       }
 
       strong {
@@ -531,9 +550,10 @@ nav {
   padding-top: 15px;
   padding-bottom: 15px;
 
-  h4 {
+  h2 {
     padding-left: 20px;
     font-family: Shrikhand;
+    font-size: 18px;
     font-weight: 500;
   }
   .ulist {
@@ -558,4 +578,48 @@ nav {
     margin-left: -17px;
     margin-bottom: 12px;
   }
+}
+
+/* Contact Form */
+.contact {
+  &__group {
+    padding-left: 20px;
+    font-size: 25px;
+
+    & input {
+      border: 2px solid #6300a0;
+      border-radius: 15px;
+      color: #6300a0;
+      // margin: 20px 20px;
+      padding: 10px 10px;
+      font-size: 25px;
+      width: 100%;
+      &:focus {
+        border: 2px solid #6300a0;
+      }
+      &:not(:focus):invalid {
+        background: #b20a37;
+        border: 2px solid #b20a37;
+        color: #fff;
+      }
+    }
+  }
+  button {
+    margin: 20px 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    background-image: linear-gradient(#ff79da, #9356dc);
+    color: white;
+    // background-color: #f06f92;
+
+     &:hover {
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+      // background-color: #FF79DA;
+      background-image: linear-gradient(
+        lighten(#ff79da, 5%),
+        lighten(#9356dc, 5%)
+      );
+  }
+  }
+ 
 }
