@@ -436,15 +436,14 @@ nav {
       p {
         display: flex;
         justify-content: space-between;
-        font-size: 15px;
+        font-size: 14px;
         margin-top: 4px;
         color: grey;
-        // minwidth: 200px;
-
-        // width: 250px;
+   
+    
         white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
+        // overflow: hidden;
+        // text-overflow: ellipsis;
       }
 
       strong {
@@ -612,14 +611,13 @@ nav {
     color: white;
     // background-color: #f06f92;
 
-     &:hover {
+    &:hover {
       box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
       // background-color: #FF79DA;
       background-image: linear-gradient(
         lighten(#ff79da, 5%),
         lighten(#9356dc, 5%)
       );
+    }
   }
-  }
- 
 }

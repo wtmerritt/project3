@@ -715,12 +715,10 @@ nav ul a:hover {
 .fullmenu .maindishes .content p {
   display: flex;
   justify-content: space-between;
-  font-size: 15px;
+  font-size: 14px;
   margin-top: 4px;
   color: grey;
   white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 .fullmenu .maindishes .content strong {
   font-size: 15px;
