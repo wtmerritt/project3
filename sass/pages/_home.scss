@@ -145,6 +145,7 @@ header {
       border-radius: 50%;
       margin-left: -18px;
     }
+
     .cell i {
       display: flex;
       justify-content: center;
@@ -161,6 +162,7 @@ header {
       font-weight: bold;
     }
   }
+
   .selection .restaurant2 {
     display: flex;
     align-items: center;
@@ -294,7 +296,23 @@ header {
   .content i {
     font-size: 20px;
     margin-right: 15px;
+
+    ::before {
+      content: "";
+      position: absolute;
+      background: red;
+
+      transition: transform 0.5s ease-in-out;
+      transform-origin: left;
+      
+      transform: scaleX(0);
+    }
+
+    :hover::before {
+      transform: scaleX(1);
+    }
   }
+
   /* Within Restaurants Section */
   @include breakpoint(tablet) {
     background-color: orange;
@@ -305,6 +323,7 @@ header {
       flex-direction: column;
       align-items: center;
     }
+    // padding-left: 100px;
   }
 
   @include breakpoint(desktop) {
@@ -583,11 +602,13 @@ nav {
   }
 
   .fa-solid.fa-utensils {
+    width: 25px;
     margin-left: -17px;
     margin-bottom: 12px;
   }
 
   .fa-solid.fa-handshake-angle {
+    width: 25px;
     margin-left: -17px;
     margin-bottom: 12px;
   }

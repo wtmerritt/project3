@@ -596,6 +596,17 @@ header {
   font-size: 20px;
   margin-right: 15px;
 }
+.restaurants .content i ::before {
+  content: "";
+  position: absolute;
+  background: red;
+  transition: transform 0.5s ease-in-out;
+  transform-origin: left;
+  transform: scaleX(0);
+}
+.restaurants .content i :hover::before {
+  transform: scaleX(1);
+}
 @media (min-width: 600px) {
   .restaurants {
     background-color: orange;
@@ -838,10 +849,12 @@ nav ul a:hover {
   text-decoration: none;
 }
 .footer .fa-solid.fa-utensils {
+  width: 25px;
   margin-left: -17px;
   margin-bottom: 12px;
 }
 .footer .fa-solid.fa-handshake-angle {
+  width: 25px;
   margin-left: -17px;
   margin-bottom: 12px;
 }
