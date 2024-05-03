@@ -435,7 +435,7 @@ header {
   display: flex;
   align-items: center;
   background-color: #f4f4f4;
-  width: 335px;
+  width: 320px;
   height: 85px;
   border-radius: 30px;
   border: none;
@@ -469,7 +469,7 @@ header {
   color: grey;
   margin-right: 12px;
 }
-.options .selection .restaurant p {
+.options .selection .restaurant .phase {
   padding-left: 0;
   font-size: 20px;
   font-weight: bold;
@@ -478,7 +478,7 @@ header {
   display: flex;
   align-items: center;
   background-color: #f4f4f4;
-  width: 335px;
+  width: 320px;
   height: 85px;
   border-radius: 30px;
   border: none;
@@ -512,7 +512,7 @@ header {
   color: #9356dc;
   margin-right: 12px;
 }
-.options .selection .restaurant2 p {
+.options .selection .restaurant2 .phase {
   align-items: start;
   padding-left: 0;
   font-size: 19px;
@@ -579,6 +579,9 @@ header {
   height: 65%;
   object-fit: cover;
 }
+.restaurants .content {
+  position: relative;
+}
 .restaurants .content h3 {
   display: flex;
   justify-content: space-between;
@@ -592,20 +595,30 @@ header {
   margin-bottom: 15px;
   padding-left: 15px;
 }
-.restaurants .content i {
+.restaurants .heart {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+.restaurants .heart-empty {
+  position: absolute;
+  font-size: 20px;
+}
+.restaurants .heart-full {
+  position: absolute;
   font-size: 20px;
   margin-right: 15px;
+  color: transparent;
 }
-.restaurants .content i ::before {
-  content: "";
-  position: absolute;
-  background: red;
-  transition: transform 0.5s ease-in-out;
-  transform-origin: left;
-  transform: scaleX(0);
+.restaurants .heart-full::before {
+  background-image: linear-gradient(#9356dc, #ff79da);
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0;
 }
-.restaurants .content i :hover::before {
-  transform: scaleX(1);
+.restaurants .heart-full:hover::before {
+  opacity: 1;
 }
 @media (min-width: 600px) {
   .restaurants {
@@ -616,6 +629,12 @@ header {
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
+  }
+  .restaurants .menus {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
   }
 }
 @media (min-width: 992px) {
@@ -845,7 +864,7 @@ nav ul a:hover {
   font-size: 18px;
   font-weight: 500;
 }
-.footer .ulist {
+.footer .ulist li {
   text-decoration: none;
 }
 .footer .fa-solid.fa-utensils {
@@ -858,11 +877,13 @@ nav ul a:hover {
   margin-left: -17px;
   margin-bottom: 12px;
 }
-.footer .ulist a {
+.footer .ulist li a {
   text-decoration: none;
   color: white;
 }
-.footer .link {
+.footer .ulist .link {
+  list-style-type: none;
+  color: white;
   margin-left: -17px;
   margin-bottom: 12px;
 }

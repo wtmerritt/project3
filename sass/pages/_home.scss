@@ -7,7 +7,6 @@ header {
 
 /* Location Text */
 .location {
-  // background: #f2f2f2;
   background: #e9e9e9;
   display: flex;
   justify-content: center;
@@ -57,8 +56,7 @@ header {
     border: none;
 
     background-image: linear-gradient(#ff79da, #9356dc);
-    color: white;
-    // font-weight: bold;
+    color: white;  
     height: 60px;
     width: 230px;
 
@@ -67,8 +65,7 @@ header {
     position: relative;
     z-index: 1;
     &:hover {
-      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-      // background-color: #FF79DA;
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);     
       background-image: linear-gradient(
         lighten(#ff79da, 5%),
         lighten(#9356dc, 5%)
@@ -118,7 +115,7 @@ header {
     display: flex;
     align-items: center;
     background-color: #f4f4f4;
-    width: 335px;
+    width: 320px;
     height: 85px;
     border-radius: 30px;
     border: none;
@@ -146,7 +143,7 @@ header {
       margin-left: -18px;
     }
 
-    .cell i {
+    .cell i {   
       display: flex;
       justify-content: center;
       align-items: center;
@@ -155,8 +152,7 @@ header {
       margin-right: 12px;
     }
 
-    p {
-      // align-items:start;
+    .phase {
       padding-left: 0;
       font-size: 20px;
       font-weight: bold;
@@ -167,7 +163,7 @@ header {
     display: flex;
     align-items: center;
     background-color: #f4f4f4;
-    width: 335px;
+    width: 320px;
     height: 85px;
     border-radius: 30px;
     border: none;
@@ -176,13 +172,12 @@ header {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 
     &:hover {
-      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-      // background-color: #FF79DA;
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);    
       background-color: lighten($color: #9356dc, $amount: 35);
       cursor: pointer;
     }
 
-    .number i {
+    .number i {   
       display: flex;
       justify-content: center;
       align-items: center;
@@ -195,7 +190,7 @@ header {
       border-radius: 50%;
       margin-left: -18px;
     }
-    .cell i {
+    .cell i {    
       display: flex;
       justify-content: center;
       align-items: center;
@@ -204,7 +199,7 @@ header {
       margin-right: 12px;
     }
 
-    p {
+    .phase {
       align-items: start;
       padding-left: 0;
       font-size: 19px;
@@ -251,7 +246,7 @@ header {
   .menus {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 20px;   
   }
 
   .menu {
@@ -279,6 +274,10 @@ header {
     object-fit: cover;
   }
 
+  .content {
+    position: relative;
+  }
+
   .content h3 {
     display: flex;
     justify-content: space-between;
@@ -293,23 +292,42 @@ header {
     margin-bottom: 15px;
     padding-left: 15px;
   }
-  .content i {
+
+  .heart {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+  }
+
+  .heart-empty {
+    position: absolute;
+    font-size: 20px;
+    // right: 15px;
+    // &:hover {
+    //   opacity: 0;
+    // }
+  }
+
+  .heart-full {
+    position: absolute;
     font-size: 20px;
     margin-right: 15px;
+    color: transparent;
+    // z-index: 1000px;
 
-    ::before {
-      content: "";
-      position: absolute;
-      background: red;
+    &::before {
+      // background: red;
+      background-image: linear-gradient(#9356dc, #ff79da);
 
-      transition: transform 0.5s ease-in-out;
-      transform-origin: left;
-      
-      transform: scaleX(0);
+      background-clip: text;
+      -webkit-background-clip: text;
+
+      transition: opacity 0.5s ease-in-out;
+      opacity: 0;
     }
 
-    :hover::before {
-      transform: scaleX(1);
+    &:hover::before {
+      opacity: 1;
     }
   }
 
@@ -323,7 +341,13 @@ header {
       flex-direction: column;
       align-items: center;
     }
-    // padding-left: 100px;
+
+    .menus {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
   }
 
   @include breakpoint(desktop) {
@@ -360,7 +384,6 @@ nav {
 
     li {
       display: inline-block;
-
       padding: 0 30px;
       font-size: 20px;
     }
@@ -385,16 +408,14 @@ nav {
 
   h1 {
     display: flex;
-    justify-content: space-between;
-    // font-style: italic;
+    justify-content: space-between; 
     font-size: 30px;
     width: 100%;
     padding-left: 25px;
     padding-right: 25px;
 
     padding-left: 20px;
-    font-family: Shrikhand;
-    // font-size: 18px;
+    font-family: Shrikhand; 
     font-weight: 500;
   }
 
@@ -454,11 +475,7 @@ nav {
   /* MAIN DISHES */
   .maindishes {
     width: 100%;
-    margin-bottom: 5px;
-
-    .maindish {
-      // width: 300px;
-    }
+    margin-bottom: 5px; 
 
     .content {
       display: flex;
@@ -468,8 +485,7 @@ nav {
       margin: 15px;
       box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
       background-color: white;
-      border-radius: 15px;
-      // width: 300px;
+      border-radius: 15px;    
 
       h3 {
         font-size: 20px;
@@ -483,9 +499,7 @@ nav {
         margin-top: 4px;
         color: grey;
 
-        white-space: nowrap;
-        // overflow: hidden;
-        // text-overflow: ellipsis;
+        white-space: nowrap;       
       }
 
       strong {
@@ -557,8 +571,7 @@ nav {
     position: relative;
     z-index: 1;
     &:hover {
-      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-      // background-color: #FF79DA;
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);    
       background-image: linear-gradient(
         lighten(#ff79da, 5%),
         lighten(#9356dc, 5%)
@@ -597,7 +610,7 @@ nav {
     font-size: 18px;
     font-weight: 500;
   }
-  .ulist {
+  .ulist li {
     text-decoration: none;
   }
 
@@ -613,11 +626,14 @@ nav {
     margin-bottom: 12px;
   }
 
-  .ulist a {
+  .ulist li a {
     text-decoration: none;
     color: white;
   }
-  .link {
+
+  .ulist .link {
+    list-style-type: none;
+    color: white;
     margin-left: -17px;
     margin-bottom: 12px;
   }
@@ -660,8 +676,7 @@ nav {
     & input {
       border: 2px solid #6300a0;
       border-radius: 15px;
-      color: #6300a0;
-      // margin: 20px 20px;
+      color: #6300a0;    
       padding: 10px 10px;
       font-size: 25px;
       width: 100%;
@@ -680,12 +695,10 @@ nav {
     border-radius: 10px;
     font-size: 20px;
     background-image: linear-gradient(#ff79da, #9356dc);
-    color: white;
-    // background-color: #f06f92;
+    color: white;   
 
     &:hover {
-      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-      // background-color: #FF79DA;
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);   
       background-image: linear-gradient(
         lighten(#ff79da, 5%),
         lighten(#9356dc, 5%)
