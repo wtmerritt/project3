@@ -726,6 +726,14 @@ nav ul a:hover {
   font-size: 20px;
   margin: 0 0;
 }
+.fullmenu hr {
+  display: block;
+  margin-top: -15px;
+  margin-left: 25px;
+  border: 0;
+  border-top: 4px solid #99e2d0;
+  width: 50px;
+}
 .fullmenu i {
   font-size: 25px;
 }
