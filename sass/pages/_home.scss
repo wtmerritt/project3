@@ -56,7 +56,7 @@ header {
     border: none;
 
     background-image: linear-gradient(#ff79da, #9356dc);
-    color: white;  
+    color: white;
     height: 60px;
     width: 230px;
 
@@ -65,7 +65,7 @@ header {
     position: relative;
     z-index: 1;
     &:hover {
-      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);     
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
       background-image: linear-gradient(
         lighten(#ff79da, 5%),
         lighten(#9356dc, 5%)
@@ -143,7 +143,7 @@ header {
       margin-left: -18px;
     }
 
-    .cell i {   
+    .cell i {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -172,12 +172,12 @@ header {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 
     &:hover {
-      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);    
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
       background-color: lighten($color: #9356dc, $amount: 35);
       cursor: pointer;
     }
 
-    .number i {   
+    .number i {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -190,7 +190,7 @@ header {
       border-radius: 50%;
       margin-left: -18px;
     }
-    .cell i {    
+    .cell i {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -246,7 +246,7 @@ header {
   .menus {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;   
+    gap: 20px;
   }
 
   .menu {
@@ -256,6 +256,7 @@ header {
     border-radius: 20px;
     width: 310px;
     height: 250px;
+    position: relative;
   }
 
   .menu:hover {
@@ -272,6 +273,20 @@ header {
     width: 100%;
     height: 65%;
     object-fit: cover;
+  }
+
+  .top-right {
+    position: absolute;
+    top: 10px;
+    right: 16px;
+    background-color: #99e2d0;
+    color: #196f5b;
+    font-weight: bold;
+    width: 80px;
+    height: 28px;
+    text-align: center;
+    padding-top: 5px;
+    font-size: 15px;
   }
 
   .content {
@@ -295,28 +310,24 @@ header {
 
   .heart {
     position: absolute;
-    right: 20px;
-    bottom: 20px;
+    right: 10px;
+    bottom: 40px;
   }
 
   .heart-empty {
     position: absolute;
     font-size: 20px;
-    // right: 15px;
-    // &:hover {
-    //   opacity: 0;
-    // }
+    right: 15px;
   }
 
   .heart-full {
     position: absolute;
     font-size: 20px;
-    margin-right: 15px;
+    right: 15px;
+
     color: transparent;
-    // z-index: 1000px;
 
     &::before {
-      // background: red;
       background-image: linear-gradient(#9356dc, #ff79da);
 
       background-clip: text;
@@ -371,7 +382,7 @@ header {
   display: flex;
   justify-content: center;
   margin-top: -10px;
-  margin-left: -50px;
+  // margin-left: -50px;
 }
 
 /* Navigation */
@@ -408,14 +419,14 @@ nav {
 
   h1 {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     font-size: 30px;
     width: 100%;
     padding-left: 25px;
     padding-right: 25px;
 
     padding-left: 20px;
-    font-family: Shrikhand; 
+    font-family: Shrikhand;
     font-weight: 500;
   }
 
@@ -475,7 +486,7 @@ nav {
   /* MAIN DISHES */
   .maindishes {
     width: 100%;
-    margin-bottom: 5px; 
+    margin-bottom: 5px;
 
     .content {
       display: flex;
@@ -485,7 +496,7 @@ nav {
       margin: 15px;
       box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
       background-color: white;
-      border-radius: 15px;    
+      border-radius: 15px;
 
       h3 {
         font-size: 20px;
@@ -499,7 +510,7 @@ nav {
         margin-top: 4px;
         color: grey;
 
-        white-space: nowrap;       
+        white-space: nowrap;
       }
 
       strong {
@@ -571,7 +582,7 @@ nav {
     position: relative;
     z-index: 1;
     &:hover {
-      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);    
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
       background-image: linear-gradient(
         lighten(#ff79da, 5%),
         lighten(#9356dc, 5%)
@@ -676,7 +687,7 @@ nav {
     & input {
       border: 2px solid #6300a0;
       border-radius: 15px;
-      color: #6300a0;    
+      color: #6300a0;
       padding: 10px 10px;
       font-size: 25px;
       width: 100%;
@@ -695,10 +706,10 @@ nav {
     border-radius: 10px;
     font-size: 20px;
     background-image: linear-gradient(#ff79da, #9356dc);
-    color: white;   
+    color: white;
 
     &:hover {
-      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);   
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
       background-image: linear-gradient(
         lighten(#ff79da, 5%),
         lighten(#9356dc, 5%)
