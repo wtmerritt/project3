@@ -447,9 +447,9 @@ nav {
     width: 50px;
   }
 
-  i {
-    font-size: 25px;
-  }
+  // i {
+  //   font-size: 25px;
+  // }
 
   /* ENTREES */
   .entrees {
@@ -479,15 +479,30 @@ nav {
         color: grey;
       }
 
-      strong {
-        font-size: 15px;
-        color: black;
-      }
+      .checkmark {
+        position: absolute;
+        right: 20px;       
+        height: 50px;
+        width: 50px;    
 
-      i {
-        font-size: 15px;
-        color: black;
-        padding-right: 20px;
+        .check-empty {    
+          font-size: 20px;      
+
+          i {       
+            font-size: 20px;            
+          }
+        }
+
+        .check-full {    
+           
+          font-size: 20px;         
+          color: #99e2d0;
+          transition: transform 1s ease-in-out;
+        }
+
+        :hover .check-full {
+          transform: translateX(100%);
+        }
       }
     }
   }
