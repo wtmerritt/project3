@@ -43,7 +43,7 @@
 
   /* Within Footer Section */
   @include breakpoint(tablet) {
-    background-color: orange;
+    // background-color: orange;   
 
     h2 {
       display: flex;
@@ -56,7 +56,7 @@
   }
 
   @include breakpoint(desktop) {
-    background-color: red;
+    // background-color: red;
 
     h2 {
       display: flex;

@@ -366,7 +366,6 @@ body {
 }
 @media (min-width: 600px) {
   .footer {
-    background-color: orange;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -378,7 +377,6 @@ body {
 }
 @media (min-width: 992px) {
   .footer {
-    background-color: red;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -544,7 +542,7 @@ nav ul a:hover {
 .fullmenu hr {
   display: block;
   margin-top: -15px;
-  margin-left: 25px;
+  margin-left: 20px;
   border: 0;
   border-top: 4px solid #99e2d0;
   width: 50px;
@@ -620,73 +618,144 @@ nav ul a:hover {
   border-radius: 50%;
 }
 .fullmenu .maindishes {
-  width: 100%;
-  margin-bottom: 5px;
-}
-.fullmenu .maindishes .content {
   display: flex;
   flex-direction: column;
-  padding-left: 20px;
-  font-size: 20px;
-  margin: 15px;
+  width: 100%;
+  margin-bottom: 5px;
+  gap: 20px;
+}
+.fullmenu .maindishes .maindish {
+  overflow: hidden;
+  height: 70px;
+  width: 350px;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   background-color: white;
   border-radius: 15px;
 }
-.fullmenu .maindishes .content h3 {
+.fullmenu .maindishes .maindish .content {
+  display: flex;
+  padding-left: 20px;
+  font-size: 20px;
+  height: 100%;
+  width: 420px;
+}
+.fullmenu .maindishes .maindish .content h3 {
   font-size: 20px;
   margin-bottom: 0px;
 }
-.fullmenu .maindishes .content p {
+.fullmenu .maindishes .maindish .content p {
   display: flex;
   justify-content: space-between;
   font-size: 14px;
   margin-top: 4px;
   color: grey;
+}
+.fullmenu .maindishes .maindish .content .entree-text {
+  flex: content;
+}
+.fullmenu .maindishes .maindish .content .entree-text p {
+  width: 180px;
   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-right: 0px;
 }
-.fullmenu .maindishes .content strong {
-  font-size: 15px;
-  color: black;
+.fullmenu .maindishes .maindish .content .entree-price {
+  align-self: flex-end;
+  margin-bottom: 4px;
+  margin-right: 20px;
 }
-.fullmenu .maindishes .content i {
-  font-size: 15px;
-  color: black;
-  padding-right: 20px;
+.fullmenu .maindishes .maindish .content:hover {
+  width: 350px;
+}
+.fullmenu .maindishes .maindish .checkmark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  width: 70px;
+  color: #99e2d0;
+  background-color: #99e2d0;
+  transition: all 0.8s;
+}
+.fullmenu .maindishes .maindish .checkmark i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
 }
 .fullmenu .desserts {
-  width: 100%;
-  margin-bottom: 5px;
-}
-.fullmenu .desserts .content {
   display: flex;
   flex-direction: column;
-  padding-left: 20px;
-  font-size: 20px;
-  margin: 15px;
+  width: 100%;
+  margin-bottom: 5px;
+  gap: 20px;
+}
+.fullmenu .desserts .dessert {
+  overflow: hidden;
+  height: 70px;
+  width: 350px;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   background-color: white;
   border-radius: 15px;
 }
-.fullmenu .desserts .content h3 {
+.fullmenu .desserts .dessert .content {
+  display: flex;
+  padding-left: 20px;
+  font-size: 20px;
+  height: 100%;
+  width: 420px;
+}
+.fullmenu .desserts .dessert .content h3 {
   font-size: 20px;
   margin-bottom: 0px;
 }
-.fullmenu .desserts .content p {
+.fullmenu .desserts .dessert .content p {
   display: flex;
   justify-content: space-between;
   font-size: 15px;
   margin-top: 4px;
   color: grey;
 }
-.fullmenu .desserts .content strong {
-  font-size: 15px;
-  color: black;
+.fullmenu .desserts .dessert .content .entree-text {
+  flex: content;
 }
-.fullmenu .desserts .content i {
-  font-size: 15px;
-  color: black;
-  padding-right: 20px;
+.fullmenu .desserts .dessert .content .entree-text p {
+  width: 180px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-right: 0px;
+}
+.fullmenu .desserts .dessert .content .entree-price {
+  align-self: flex-end;
+  margin-bottom: 4px;
+  margin-right: 20px;
+}
+.fullmenu .desserts .dessert .content:hover {
+  width: 350px;
+}
+.fullmenu .desserts .dessert .checkmark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  width: 70px;
+  color: #99e2d0;
+  background-color: #99e2d0;
+  transition: all 0.8s;
+}
+.fullmenu .desserts .dessert .checkmark i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
 }
 .fullmenu .order {
   border-radius: 30px;
