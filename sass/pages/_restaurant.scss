@@ -2,7 +2,8 @@
 .options {
   h2 {
     display: flex;
-    padding: 20px 0 20px 20px;
+    padding: 20px 0 20px 0px;
+    margin-left: 20px;
   }
 
   img {
@@ -69,7 +70,7 @@
     border-radius: 30px;
     border: none;
     margin-left: 20px;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 
     &:hover {
@@ -117,6 +118,7 @@
       flex-wrap: wrap;
       flex-direction: column;
       align-items: center;
+      // margin-left: 110px;
     }
 
     .selection {
@@ -143,22 +145,32 @@
   @include breakpoint(desktop) {
     background-color: red;
 
+    h2 {
+      display: flex;
+      align-items: start;
+      margin-left: 130px;
+      width: 300px;
+    }
+
     .selection {
       display: flex;
-      gap: 50px;
-      width: 560px;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-left: 70px;
+      // justify-content: space-between;
+      // gap: 50px;
+      // width: 100%;
+      // width: 360px;
     }
 
     .selection .restaurant {
-      width: 360px;
+      width: 330px;
+      margin-left: 70px;
     }
 
     .selection .restaurant2 {
-      width: 360px;
-    }
-
-    h2 {
-      margin-left: 10px;
+      width: 330px;
+      margin-left: 70px;
     }
   }
 }
@@ -170,7 +182,7 @@
   margin-bottom: 35px;
 
   h2 {
-    padding-left: 10px;
+    // padding-left: 10px;
   }
 
   .menus {
@@ -301,7 +313,8 @@
     h2 {
       display: flex;
       align-items: start;
-      margin-left: 80px;
+      margin-left: 110px;
+      width: 300px;
     }
 
     .menus {
