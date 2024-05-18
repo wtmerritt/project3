@@ -542,7 +542,7 @@ nav ul a:hover {
 .fullmenu hr {
   display: block;
   margin-top: -15px;
-  margin-left: 20px;
+  margin-left: 10px;
   border: 0;
   border-top: 4px solid #99e2d0;
   width: 50px;
@@ -568,7 +568,7 @@ nav ul a:hover {
   font-size: 20px;
   height: 100%;
   width: 420px;
-  transition: width 1s;
+  transition: width 3s;
 }
 .fullmenu .entrees .entree .content h3 {
   font-size: 20px;
@@ -607,7 +607,6 @@ nav ul a:hover {
   width: 70px;
   color: #99e2d0;
   background-color: #99e2d0;
-  transition: all 0.8s;
 }
 .fullmenu .entrees .entree .checkmark i {
   display: flex;
@@ -617,6 +616,10 @@ nav ul a:hover {
   width: 30px;
   height: 30px;
   border-radius: 50%;
+}
+.fullmenu .entrees .entree .checkmark:hover {
+  transition: all 3s ease-in-out;
+  transform: rotate(360deg);
 }
 .fullmenu .maindishes {
   display: flex;
@@ -639,7 +642,7 @@ nav ul a:hover {
   font-size: 20px;
   height: 100%;
   width: 420px;
-  transition: width 1s;
+  transition: width 3s;
 }
 .fullmenu .maindishes .maindish .content h3 {
   font-size: 20px;
@@ -678,7 +681,6 @@ nav ul a:hover {
   width: 70px;
   color: #99e2d0;
   background-color: #99e2d0;
-  transition: all 0.8s;
 }
 .fullmenu .maindishes .maindish .checkmark i {
   display: flex;
@@ -688,6 +690,10 @@ nav ul a:hover {
   width: 30px;
   height: 30px;
   border-radius: 50%;
+}
+.fullmenu .maindishes .maindish .checkmark:hover {
+  transition: all 3s ease-in-out;
+  transform: rotate(360deg);
 }
 .fullmenu .desserts {
   display: flex;
@@ -710,7 +716,7 @@ nav ul a:hover {
   font-size: 20px;
   height: 100%;
   width: 420px;
-  transition: width 1s;
+  transition: width 3s;
 }
 .fullmenu .desserts .dessert .content h3 {
   font-size: 20px;
@@ -749,7 +755,6 @@ nav ul a:hover {
   width: 70px;
   color: #99e2d0;
   background-color: #99e2d0;
-  transition: all 0.8s;
 }
 .fullmenu .desserts .dessert .checkmark i {
   display: flex;
@@ -759,6 +764,10 @@ nav ul a:hover {
   width: 30px;
   height: 30px;
   border-radius: 50%;
+}
+.fullmenu .desserts .dessert .checkmark:hover {
+  transition: all 3s ease-in-out;
+  transform: rotate(360deg);
 }
 .fullmenu .order {
   border-radius: 30px;
