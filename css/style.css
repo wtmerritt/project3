@@ -585,11 +585,10 @@ nav ul a:hover {
   flex: content;
 }
 .fullmenu .entrees .entree .content .entree-text p {
-  width: 180px;
+  width: 185px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  margin-right: 0px;
 }
 .fullmenu .entrees .entree .content .entree-price {
   align-self: flex-end;
@@ -659,7 +658,7 @@ nav ul a:hover {
   flex: content;
 }
 .fullmenu .maindishes .maindish .content .entree-text p {
-  width: 180px;
+  width: 185px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -733,7 +732,7 @@ nav ul a:hover {
   flex: content;
 }
 .fullmenu .desserts .dessert .content .entree-text p {
-  width: 180px;
+  width: 185px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;

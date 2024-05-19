@@ -210,11 +210,11 @@ nav {
           flex: content;
 
           p {
-            width: 180px;
+            width: 185px;
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
-            margin-right: 0px;
+            // margin-right: 0px;
           }
         }
 
@@ -297,7 +297,7 @@ nav {
           flex: content;
 
           p {
-            width: 180px;
+            width: 185px;
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
@@ -384,13 +384,13 @@ nav {
           flex: content;
 
           p {
-            width: 180px;
+            width: 185px;
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
             margin-right: 0px;
           }
-        }
+        }  
 
         .entree-price {
           align-self: flex-end;
