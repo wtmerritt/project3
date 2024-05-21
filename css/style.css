@@ -515,11 +515,11 @@ nav ul a:hover {
   background-color: #f2f2f2;
   border-radius: 30px;
   position: relative;
-  margin-top: -30px;
   /* ENTREES */
   /* MAIN DISHES */
   /* DESSERTS */
   /* Order Button */
+  /* Within Full Menu */
 }
 .fullmenu h1 {
   display: flex;
@@ -552,6 +552,7 @@ nav ul a:hover {
   flex-direction: column;
   width: 100%;
   margin-bottom: 5px;
+  margin-left: 20px;
   gap: 20px;
 }
 .fullmenu .entrees .entree {
@@ -625,6 +626,7 @@ nav ul a:hover {
   flex-direction: column;
   width: 100%;
   margin-bottom: 5px;
+  margin-left: 20px;
   gap: 20px;
 }
 .fullmenu .maindishes .maindish {
@@ -699,6 +701,7 @@ nav ul a:hover {
   flex-direction: column;
   width: 100%;
   margin-bottom: 5px;
+  margin-left: 20px;
   gap: 20px;
 }
 .fullmenu .desserts .dessert {
@@ -799,8 +802,591 @@ nav ul a:hover {
   z-index: -1;
   transition: opacity 250ms;
 }
+@media (min-width: 600px) {
+  .fullmenu {
+    background-color: orange;
+    /* ENTREES */
+    /* MAIN DISHES */
+    /* DESSERTS */
+    /* Order Button */
+  }
+  .fullmenu h1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 30px;
+    width: 100%;
+    font-family: Shrikhand;
+    font-weight: 500;
+  }
+  .fullmenu h1 i {
+    padding-left: 20px;
+  }
+  .fullmenu h2 {
+    width: 100%;
+    padding-left: 0;
+    color: grey;
+    font-size: 20px;
+    margin: 0 0 -10px 0;
+  }
+  .fullmenu hr {
+    border: 0;
+    border-top: 4px solid #99e2d0;
+    width: 50px;
+    margin: 0 0;
+    margin-bottom: 20px;
+  }
+  .fullmenu .entrees {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 5px;
+    gap: 20px;
+  }
+  .fullmenu .entrees .entree {
+    overflow: hidden;
+    height: 70px;
+    width: 350px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    background-color: white;
+    border-radius: 15px;
+  }
+  .fullmenu .entrees .entree .content {
+    display: flex;
+    padding-left: 20px;
+    font-size: 20px;
+    height: 100%;
+    width: 420px;
+    transition: width 3s;
+  }
+  .fullmenu .entrees .entree .content h3 {
+    font-size: 20px;
+    margin-bottom: 0px;
+  }
+  .fullmenu .entrees .entree .content p {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    margin-top: 4px;
+    color: grey;
+  }
+  .fullmenu .entrees .entree .content .entree-text {
+    flex: content;
+  }
+  .fullmenu .entrees .entree .content .entree-text p {
+    width: 185px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .fullmenu .entrees .entree .content .entree-price {
+    align-self: flex-end;
+    margin-bottom: 4px;
+    margin-right: 20px;
+  }
+  .fullmenu .entrees .entree .content:hover {
+    width: 350px;
+  }
+  .fullmenu .entrees .entree .checkmark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    width: 70px;
+    color: #99e2d0;
+    background-color: #99e2d0;
+  }
+  .fullmenu .entrees .entree .checkmark i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+  .fullmenu .entrees .entree .checkmark:hover {
+    transition: all 3s ease-in-out;
+    transform: rotate(360deg);
+  }
+  .fullmenu .maindishes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 5px;
+    gap: 20px;
+  }
+  .fullmenu .maindishes .maindish {
+    overflow: hidden;
+    height: 70px;
+    width: 350px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    background-color: white;
+    border-radius: 15px;
+  }
+  .fullmenu .maindishes .maindish .content {
+    display: flex;
+    padding-left: 20px;
+    font-size: 20px;
+    height: 100%;
+    width: 420px;
+    transition: width 3s;
+  }
+  .fullmenu .maindishes .maindish .content h3 {
+    font-size: 20px;
+    margin-bottom: 0px;
+  }
+  .fullmenu .maindishes .maindish .content p {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-top: 4px;
+    color: grey;
+  }
+  .fullmenu .maindishes .maindish .content .entree-text {
+    flex: content;
+  }
+  .fullmenu .maindishes .maindish .content .entree-text p {
+    width: 185px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-right: 0px;
+  }
+  .fullmenu .maindishes .maindish .content .entree-price {
+    align-self: flex-end;
+    margin-bottom: 4px;
+    margin-right: 20px;
+  }
+  .fullmenu .maindishes .maindish .content:hover {
+    width: 350px;
+  }
+  .fullmenu .maindishes .maindish .checkmark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    width: 70px;
+    color: #99e2d0;
+    background-color: #99e2d0;
+  }
+  .fullmenu .maindishes .maindish .checkmark i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+  .fullmenu .maindishes .maindish .checkmark:hover {
+    transition: all 3s ease-in-out;
+    transform: rotate(360deg);
+  }
+  .fullmenu .desserts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 5px;
+    gap: 20px;
+  }
+  .fullmenu .desserts .dessert {
+    overflow: hidden;
+    height: 70px;
+    width: 350px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    background-color: white;
+    border-radius: 15px;
+  }
+  .fullmenu .desserts .dessert .content {
+    display: flex;
+    padding-left: 20px;
+    font-size: 20px;
+    height: 100%;
+    width: 420px;
+    transition: width 3s;
+  }
+  .fullmenu .desserts .dessert .content h3 {
+    font-size: 20px;
+    margin-bottom: 0px;
+  }
+  .fullmenu .desserts .dessert .content p {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    margin-top: 4px;
+    color: grey;
+  }
+  .fullmenu .desserts .dessert .content .entree-text {
+    flex: content;
+  }
+  .fullmenu .desserts .dessert .content .entree-text p {
+    width: 185px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-right: 0px;
+  }
+  .fullmenu .desserts .dessert .content .entree-price {
+    align-self: flex-end;
+    margin-bottom: 4px;
+    margin-right: 20px;
+  }
+  .fullmenu .desserts .dessert .content:hover {
+    width: 350px;
+  }
+  .fullmenu .desserts .dessert .checkmark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    width: 70px;
+    color: #99e2d0;
+    background-color: #99e2d0;
+  }
+  .fullmenu .desserts .dessert .checkmark i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+  .fullmenu .desserts .dessert .checkmark:hover {
+    transition: all 3s ease-in-out;
+    transform: rotate(360deg);
+  }
+  .fullmenu .order {
+    border-radius: 30px;
+    border: none;
+    background-image: linear-gradient(#ff79da, #9356dc);
+    color: white;
+    height: 60px;
+    width: 230px;
+    margin: 30px 0px 30px 0px;
+    font-size: 18px;
+    position: relative;
+    z-index: 1;
+  }
+  .fullmenu .order:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    background-image: linear-gradient(#ff93e1, #a16be0);
+    cursor: pointer;
+  }
+  .fullmenu .order::after {
+    content: "";
+    border-radius: 25px;
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #ff13be;
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 250ms;
+  }
+}
+@media (min-width: 992px) {
+  .fullmenu {
+    background-color: red;
+    /* ENTREES */
+    /* MAIN DISHES */
+    /* DESSERTS */
+    /* Order Button */
+  }
+  .fullmenu h1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 30px;
+    width: 100%;
+    font-family: Shrikhand;
+    font-weight: 500;
+  }
+  .fullmenu h1 i {
+    padding-left: 20px;
+  }
+  .fullmenu h2 {
+    width: 100%;
+    padding-left: 0;
+    color: grey;
+    font-size: 20px;
+    margin: 0 0 -10px 0;
+  }
+  .fullmenu hr {
+    border: 0;
+    border-top: 4px solid #99e2d0;
+    width: 50px;
+    margin: 0 0;
+    margin-bottom: 20px;
+  }
+  .fullmenu .entrees {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 5px;
+    gap: 20px;
+  }
+  .fullmenu .entrees .entree {
+    overflow: hidden;
+    height: 70px;
+    width: 350px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    background-color: white;
+    border-radius: 15px;
+  }
+  .fullmenu .entrees .entree .content {
+    display: flex;
+    padding-left: 20px;
+    font-size: 20px;
+    height: 100%;
+    width: 420px;
+    transition: width 3s;
+  }
+  .fullmenu .entrees .entree .content h3 {
+    font-size: 20px;
+    margin-bottom: 0px;
+  }
+  .fullmenu .entrees .entree .content p {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    margin-top: 4px;
+    color: grey;
+  }
+  .fullmenu .entrees .entree .content .entree-text {
+    flex: content;
+  }
+  .fullmenu .entrees .entree .content .entree-text p {
+    width: 185px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .fullmenu .entrees .entree .content .entree-price {
+    align-self: flex-end;
+    margin-bottom: 4px;
+    margin-right: 20px;
+  }
+  .fullmenu .entrees .entree .content:hover {
+    width: 350px;
+  }
+  .fullmenu .entrees .entree .checkmark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    width: 70px;
+    color: #99e2d0;
+    background-color: #99e2d0;
+  }
+  .fullmenu .entrees .entree .checkmark i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+  .fullmenu .entrees .entree .checkmark:hover {
+    transition: all 3s ease-in-out;
+    transform: rotate(360deg);
+  }
+  .fullmenu .maindishes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 5px;
+    gap: 20px;
+  }
+  .fullmenu .maindishes .maindish {
+    overflow: hidden;
+    height: 70px;
+    width: 350px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    background-color: white;
+    border-radius: 15px;
+  }
+  .fullmenu .maindishes .maindish .content {
+    display: flex;
+    padding-left: 20px;
+    font-size: 20px;
+    height: 100%;
+    width: 420px;
+    transition: width 3s;
+  }
+  .fullmenu .maindishes .maindish .content h3 {
+    font-size: 20px;
+    margin-bottom: 0px;
+  }
+  .fullmenu .maindishes .maindish .content p {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-top: 4px;
+    color: grey;
+  }
+  .fullmenu .maindishes .maindish .content .entree-text {
+    flex: content;
+  }
+  .fullmenu .maindishes .maindish .content .entree-text p {
+    width: 185px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-right: 0px;
+  }
+  .fullmenu .maindishes .maindish .content .entree-price {
+    align-self: flex-end;
+    margin-bottom: 4px;
+    margin-right: 20px;
+  }
+  .fullmenu .maindishes .maindish .content:hover {
+    width: 350px;
+  }
+  .fullmenu .maindishes .maindish .checkmark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    width: 70px;
+    color: #99e2d0;
+    background-color: #99e2d0;
+  }
+  .fullmenu .maindishes .maindish .checkmark i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+  .fullmenu .maindishes .maindish .checkmark:hover {
+    transition: all 3s ease-in-out;
+    transform: rotate(360deg);
+  }
+  .fullmenu .desserts {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 5px;
+    gap: 20px;
+  }
+  .fullmenu .desserts .dessert {
+    overflow: hidden;
+    height: 70px;
+    width: 350px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    background-color: white;
+    border-radius: 15px;
+  }
+  .fullmenu .desserts .dessert .content {
+    display: flex;
+    padding-left: 20px;
+    font-size: 20px;
+    height: 100%;
+    width: 420px;
+    transition: width 3s;
+  }
+  .fullmenu .desserts .dessert .content h3 {
+    font-size: 20px;
+    margin-bottom: 0px;
+  }
+  .fullmenu .desserts .dessert .content p {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    margin-top: 4px;
+    color: grey;
+  }
+  .fullmenu .desserts .dessert .content .entree-text {
+    flex: content;
+  }
+  .fullmenu .desserts .dessert .content .entree-text p {
+    width: 185px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-right: 0px;
+  }
+  .fullmenu .desserts .dessert .content .entree-price {
+    align-self: flex-end;
+    margin-bottom: 4px;
+    margin-right: 20px;
+  }
+  .fullmenu .desserts .dessert .content:hover {
+    width: 350px;
+  }
+  .fullmenu .desserts .dessert .checkmark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    width: 70px;
+    color: #99e2d0;
+    background-color: #99e2d0;
+  }
+  .fullmenu .desserts .dessert .checkmark i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+  .fullmenu .desserts .dessert .checkmark:hover {
+    transition: all 3s ease-in-out;
+    transform: rotate(360deg);
+  }
+  .fullmenu .order {
+    border-radius: 30px;
+    border: none;
+    background-image: linear-gradient(#ff79da, #9356dc);
+    color: white;
+    height: 60px;
+    width: 230px;
+    margin: 30px 0px 30px 0px;
+    font-size: 18px;
+    position: relative;
+    z-index: 1;
+  }
+  .fullmenu .order:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    background-image: linear-gradient(#ff93e1, #a16be0);
+    cursor: pointer;
+  }
+  .fullmenu .order::after {
+    content: "";
+    border-radius: 25px;
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #ff13be;
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 250ms;
+  }
+}
 
 /* Contact Form */
+.contact {
+  /* Within Contact Form */
+}
 .contact__group {
   padding-left: 20px;
   font-size: 25px;
@@ -831,6 +1417,16 @@ nav ul a:hover {
 .contact button:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   background-image: linear-gradient(#ff93e1, #a16be0);
+}
+@media (min-width: 600px) {
+  .contact {
+    background-color: orange;
+  }
+}
+@media (min-width: 992px) {
+  .contact {
+    background-color: red;
+  }
 }
 
 /* Restaurant Options */
@@ -969,8 +1565,6 @@ nav ul a:hover {
   }
   .options h2 {
     display: flex;
-    align-items: start;
-    margin-left: 130px;
     width: 300px;
   }
   .options .selection {

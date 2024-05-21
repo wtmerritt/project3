@@ -104,7 +104,6 @@ header {
   display: flex;
   justify-content: center;
   margin-top: -10px;
-  // margin-left: -50px;
 }
 
 /* Navigation */
@@ -137,7 +136,7 @@ nav {
   background-color: #f2f2f2;
   border-radius: 30px;
   position: relative;
-  margin-top: -30px;
+  // margin-top: -30px;
 
   h1 {
     display: flex;
@@ -175,6 +174,7 @@ nav {
     flex-direction: column;
     width: 100%;
     margin-bottom: 5px;
+    margin-left: 20px;
     gap: 20px;
 
     .entree {
@@ -193,6 +193,11 @@ nav {
         width: 420px;
         transition: width 3s;
 
+        // width: 185px;
+        // white-space: nowrap;
+        // overflow: hidden;
+        // text-overflow: ellipsis;
+
         h3 {
           font-size: 20px;
           margin-bottom: 0px;
@@ -208,6 +213,11 @@ nav {
 
         .entree-text {
           flex: content;
+
+          // width: 185px;
+          // white-space: nowrap;
+          // overflow: hidden;
+          // text-overflow: ellipsis;
 
           p {
             width: 185px;
@@ -262,6 +272,7 @@ nav {
     flex-direction: column;
     width: 100%;
     margin-bottom: 5px;
+    margin-left: 20px;
     gap: 20px;
 
     .maindish {
@@ -349,6 +360,7 @@ nav {
     flex-direction: column;
     width: 100%;
     margin-bottom: 5px;
+    margin-left: 20px;
     gap: 20px;
 
     .dessert {
@@ -390,7 +402,7 @@ nav {
             text-overflow: ellipsis;
             margin-right: 0px;
           }
-        }  
+        }
 
         .entree-price {
           align-self: flex-end;
@@ -468,6 +480,685 @@ nav {
       transition: opacity 250ms;
     }
   }
+
+  /* Within Full Menu */
+  @include breakpoint(tablet) {
+    background-color: orange;
+
+        h1 {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      font-size: 30px;
+      width: 100%;
+
+      font-family: Shrikhand;
+      font-weight: 500;
+      
+      i {
+        padding-left: 20px;
+      }
+    }
+
+    h2 {
+      width: 100%;
+      padding-left: 0;
+      color: grey;
+      font-size: 20px;
+      margin: 0 0 -10px 0;
+    }
+
+    hr {
+      border: 0;
+      border-top: 4px solid #99e2d0;
+      width: 50px;
+      margin: 0 0;
+      margin-bottom: 20px;
+    }
+
+    /* ENTREES */
+    .entrees {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      margin-bottom: 5px;
+      gap: 20px;
+
+      .entree {
+        overflow: hidden;
+        height: 70px;
+        width: 350px;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        background-color: white;
+        border-radius: 15px;
+        // margin-top: 10px;
+
+        .content {
+          display: flex;
+          padding-left: 20px;
+          font-size: 20px;
+          height: 100%;
+          width: 420px;
+          transition: width 3s;
+
+          h3 {
+            font-size: 20px;
+            margin-bottom: 0px;
+          }
+
+          p {
+            display: flex;
+            justify-content: space-between;
+            font-size: 15px;
+            margin-top: 4px;
+            color: grey;
+          }
+
+          .entree-text {
+            flex: content;
+
+            p {
+              width: 185px;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              // margin-right: 0px;
+            }
+          }
+
+          .entree-price {
+            align-self: flex-end;
+            margin-bottom: 4px;
+            margin-right: 20px;
+          }
+
+          &:hover {
+            width: 350px;
+          }
+        }
+
+        .checkmark {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 70px;
+          width: 70px;
+          color: #99e2d0;
+          background-color: #99e2d0;
+
+          i {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+          }
+        }
+
+        .checkmark:hover {
+          transition: all 3s ease-in-out;
+          transform: rotate(360deg);
+        }
+      }
+    }
+
+    /* MAIN DISHES */
+    .maindishes {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      margin-bottom: 5px;
+      gap: 20px;
+
+      .maindish {
+        overflow: hidden;
+        height: 70px;
+        width: 350px;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        background-color: white;
+        border-radius: 15px;
+
+        .content {
+          display: flex;
+          padding-left: 20px;
+          font-size: 20px;
+          height: 100%;
+          width: 420px;
+          transition: width 3s;
+
+          h3 {
+            font-size: 20px;
+            margin-bottom: 0px;
+          }
+
+          p {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            margin-top: 4px;
+            color: grey;
+          }
+
+          .entree-text {
+            flex: content;
+
+            p {
+              width: 185px;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              margin-right: 0px;
+            }
+          }
+
+          .entree-price {
+            align-self: flex-end;
+            margin-bottom: 4px;
+            margin-right: 20px;
+          }
+
+          &:hover {
+            width: 350px;
+          }
+        }
+
+        .checkmark {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 70px;
+          width: 70px;
+          color: #99e2d0;
+          background-color: #99e2d0;
+          // transition: all 0.8s;
+
+          i {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+          }
+        }
+        .checkmark:hover {
+          transition: all 3s ease-in-out;
+          transform: rotate(360deg);
+        }
+      }
+    }
+
+    /* DESSERTS */
+    .desserts {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      margin-bottom: 5px;
+      gap: 20px;
+
+      .dessert {
+        overflow: hidden;
+        height: 70px;
+        width: 350px;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        background-color: white;
+        border-radius: 15px;
+
+        .content {
+          display: flex;
+          padding-left: 20px;
+          font-size: 20px;
+          height: 100%;
+          width: 420px;
+          transition: width 3s;
+
+          h3 {
+            font-size: 20px;
+            margin-bottom: 0px;
+          }
+
+          p {
+            display: flex;
+            justify-content: space-between;
+            font-size: 15px;
+            margin-top: 4px;
+            color: grey;
+          }
+
+          .entree-text {
+            flex: content;
+
+            p {
+              width: 185px;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              margin-right: 0px;
+            }
+          }
+
+          .entree-price {
+            align-self: flex-end;
+            margin-bottom: 4px;
+            margin-right: 20px;
+          }
+
+          &:hover {
+            width: 350px;
+          }
+        }
+
+        .checkmark {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 70px;
+          width: 70px;
+          color: #99e2d0;
+          background-color: #99e2d0;
+          // transition: all 0.8s;
+
+          i {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+          }
+        }
+        .checkmark:hover {
+          transition: all 3s ease-in-out;
+          transform: rotate(360deg);
+        }
+      }
+    }
+
+    /* Order Button */
+    .order {
+      border-radius: 30px;
+      border: none;
+      background-image: linear-gradient(#ff79da, #9356dc);
+      color: white;
+      height: 60px;
+      width: 230px;
+      // text-align: center;
+
+      margin: 30px 0px 30px 0px;
+      font-size: 18px;
+      position: relative;
+      z-index: 1;
+      &:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        background-image: linear-gradient(
+          lighten(#ff79da, 5%),
+          lighten(#9356dc, 5%)
+        );
+
+        cursor: pointer;
+      }
+      &::after {
+        content: "";
+        border-radius: 25px;
+        border: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: darken($color: #ff79da, $amount: 20);
+        opacity: 0;
+        z-index: -1;
+        transition: opacity 250ms;
+      }
+    }
+  }
+
+  @include breakpoint(desktop) {
+    background-color: red;
+
+    h1 {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      font-size: 30px;
+      width: 100%;
+
+      font-family: Shrikhand;
+      font-weight: 500;
+
+      i {
+        padding-left: 20px;
+      }
+    }
+
+    h2 {
+      width: 100%;
+      padding-left: 0;
+      color: grey;
+      font-size: 20px;
+      margin: 0 0 -10px 0;
+    }
+
+    hr {
+      border: 0;
+      border-top: 4px solid #99e2d0;
+      width: 50px;
+      margin: 0 0;
+      margin-bottom: 20px;
+    }
+
+    /* ENTREES */
+    .entrees {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width: 100%;
+      margin-bottom: 5px;
+      gap: 20px;
+
+      .entree {
+        overflow: hidden;
+        height: 70px;
+        width: 350px;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        background-color: white;
+        border-radius: 15px;
+        // margin-top: 10px;
+
+        .content {
+          display: flex;
+          padding-left: 20px;
+          font-size: 20px;
+          height: 100%;
+          width: 420px;
+          transition: width 3s;
+
+          h3 {
+            font-size: 20px;
+            margin-bottom: 0px;
+          }
+
+          p {
+            display: flex;
+            justify-content: space-between;
+            font-size: 15px;
+            margin-top: 4px;
+            color: grey;
+          }
+
+          .entree-text {
+            flex: content;
+
+            p {
+              width: 185px;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              // margin-right: 0px;
+            }
+          }
+
+          .entree-price {
+            align-self: flex-end;
+            margin-bottom: 4px;
+            margin-right: 20px;
+          }
+
+          &:hover {
+            width: 350px;
+          }
+        }
+
+        .checkmark {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 70px;
+          width: 70px;
+          color: #99e2d0;
+          background-color: #99e2d0;
+
+          i {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+          }
+        }
+
+        .checkmark:hover {
+          transition: all 3s ease-in-out;
+          transform: rotate(360deg);
+        }
+      }
+    }
+
+    /* MAIN DISHES */
+    .maindishes {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width: 100%;
+      margin-bottom: 5px;
+      gap: 20px;
+
+      .maindish {
+        overflow: hidden;
+        height: 70px;
+        width: 350px;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        background-color: white;
+        border-radius: 15px;
+
+        .content {
+          display: flex;
+          padding-left: 20px;
+          font-size: 20px;
+          height: 100%;
+          width: 420px;
+          transition: width 3s;
+
+          h3 {
+            font-size: 20px;
+            margin-bottom: 0px;
+          }
+
+          p {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            margin-top: 4px;
+            color: grey;
+          }
+
+          .entree-text {
+            flex: content;
+
+            p {
+              width: 185px;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              margin-right: 0px;
+            }
+          }
+
+          .entree-price {
+            align-self: flex-end;
+            margin-bottom: 4px;
+            margin-right: 20px;
+          }
+
+          &:hover {
+            width: 350px;
+          }
+        }
+
+        .checkmark {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 70px;
+          width: 70px;
+          color: #99e2d0;
+          background-color: #99e2d0;
+          // transition: all 0.8s;
+
+          i {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+          }
+        }
+        .checkmark:hover {
+          transition: all 3s ease-in-out;
+          transform: rotate(360deg);
+        }
+      }
+    }
+
+    /* DESSERTS */
+    .desserts {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width: 100%;
+      margin-bottom: 5px;
+      gap: 20px;
+
+      .dessert {
+        overflow: hidden;
+        height: 70px;
+        width: 350px;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        background-color: white;
+        border-radius: 15px;
+
+        .content {
+          display: flex;
+          padding-left: 20px;
+          font-size: 20px;
+          height: 100%;
+          width: 420px;
+          transition: width 3s;
+
+          h3 {
+            font-size: 20px;
+            margin-bottom: 0px;
+          }
+
+          p {
+            display: flex;
+            justify-content: space-between;
+            font-size: 15px;
+            margin-top: 4px;
+            color: grey;
+          }
+
+          .entree-text {
+            flex: content;
+
+            p {
+              width: 185px;
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              margin-right: 0px;
+            }
+          }
+
+          .entree-price {
+            align-self: flex-end;
+            margin-bottom: 4px;
+            margin-right: 20px;
+          }
+
+          &:hover {
+            width: 350px;
+          }
+        }
+
+        .checkmark {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 70px;
+          width: 70px;
+          color: #99e2d0;
+          background-color: #99e2d0;
+          // transition: all 0.8s;
+
+          i {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+          }
+        }
+        .checkmark:hover {
+          transition: all 3s ease-in-out;
+          transform: rotate(360deg);
+        }
+      }
+    }
+
+    /* Order Button */
+    .order {
+      border-radius: 30px;
+      border: none;
+      background-image: linear-gradient(#ff79da, #9356dc);
+      color: white;
+      height: 60px;
+      width: 230px;
+      // text-align: center;
+
+      margin: 30px 0px 30px 0px;
+      font-size: 18px;
+      position: relative;
+      z-index: 1;
+      &:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        background-image: linear-gradient(
+          lighten(#ff79da, 5%),
+          lighten(#9356dc, 5%)
+        );
+
+        cursor: pointer;
+      }
+      &::after {
+        content: "";
+        border-radius: 25px;
+        border: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: darken($color: #ff79da, $amount: 20);
+        opacity: 0;
+        z-index: -1;
+        transition: opacity 250ms;
+      }
+    }
+  }
 }
 
 /* Contact Form */
@@ -507,5 +1198,15 @@ nav {
         lighten(#9356dc, 5%)
       );
     }
+  }
+
+  /* Within Contact Form */
+
+  @include breakpoint(tablet) {
+    background-color: orange;
+  }
+
+  @include breakpoint(desktop) {
+    background-color: red;
   }
 }
