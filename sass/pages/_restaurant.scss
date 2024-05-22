@@ -147,9 +147,10 @@
 
     h2 {
       display: flex;
-      // align-items: start;
-      // margin-left: 130px;
-      width: 300px;
+      flex-direction: row;
+      // justify-content: center;
+      margin-left: 110px;
+      width: 200px;
     }
 
     .selection {
@@ -165,7 +166,7 @@
 
     .selection .restaurant {
       width: 330px;
-      margin-left: 70px;
+      margin-left: 50px;
     }
 
     .selection .restaurant2 {
@@ -313,8 +314,8 @@
     h2 {
       display: flex;
       align-items: start;
-      margin-left: 110px;
-      width: 300px;
+      margin-left: 100px;
+      width: 200px;
     }
 
     .menus {

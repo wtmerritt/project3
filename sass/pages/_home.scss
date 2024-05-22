@@ -5,6 +5,27 @@ header {
   padding: 20px 0 20px 0;
 }
 
+/* Loader Spinner */
+.loader {
+  display: flex;
+  // flex-direction: column;
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  justify-content: center;
+  // align-items: center;
+  // animation: spin 5s linear infinite;
+  animation: spin 8s linear;  
+   
+}
+
+@keyframes spin {  
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(2880deg); }
+}
+
 /* Location Text */
 .location {
   background: #e9e9e9;
@@ -844,10 +865,10 @@ nav {
       padding-left: 0;
       color: grey;
       font-size: 20px;
-      margin: 0 0 -10px 0;
+      margin: 0 0 0px 0;
     }
 
-    hr {
+    hr {     
       border: 0;
       border-top: 4px solid #99e2d0;
       width: 50px;
