@@ -6,24 +6,28 @@ header {
 }
 
 /* Loader Spinner */
-.loader {
+.spinner {
   display: flex;
-  // flex-direction: column;
   border: 16px solid #f3f3f3; /* Light grey */
   border-top: 16px solid #3498db; /* Blue */
   border-radius: 50%;
   width: 70px;
   height: 70px;
-  justify-content: center;
-  // align-items: center;
+
   // animation: spin 5s linear infinite;
-  animation: spin 8s linear;  
-   
+  animation: spin 8s linear;
+  position: absolute;
+  top: 100px;
+  left: 150px;
 }
 
-@keyframes spin {  
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(2880deg); }
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(2880deg);
+  }
 }
 
 /* Location Text */
@@ -124,6 +128,7 @@ header {
 header {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-top: -10px;
 }
 
@@ -506,7 +511,7 @@ nav {
   @include breakpoint(tablet) {
     background-color: orange;
 
-        h1 {
+    h1 {
       display: flex;
       flex-direction: row;
       justify-content: center;
@@ -515,7 +520,7 @@ nav {
 
       font-family: Shrikhand;
       font-weight: 500;
-      
+
       i {
         padding-left: 20px;
       }
@@ -868,7 +873,7 @@ nav {
       margin: 0 0 0px 0;
     }
 
-    hr {     
+    hr {
       border: 0;
       border-top: 4px solid #99e2d0;
       width: 50px;
