@@ -1,5 +1,4 @@
 /* Header */
-
 .arrow {
   color: black;
   width: 20px;
@@ -23,7 +22,7 @@
   background-color: #f2f2f2;
   border-radius: 30px;
   position: relative;
-  // margin-top: -30px;
+  margin-top: -30px;
 
   h1 {
     display: flex;
@@ -40,7 +39,7 @@
 
   h2 {
     width: 100%;
-    padding-left: 25px;
+    padding-left: 15px;
     color: grey;
     font-size: 20px;
     margin: 0 0;
@@ -49,7 +48,7 @@
   hr {
     display: block;
     margin-top: -15px;
-    margin-left: 10px;
+    margin-left: 15px;
     border: 0;
     border-top: 4px solid #99e2d0;
     width: 50px;
@@ -66,8 +65,8 @@
 
     .entree {
       overflow: hidden;
-      height: 70px;
-      width: 350px;
+      height: 70px;      
+      width: 340px;
       box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
       background-color: white;
       border-radius: 15px;
@@ -76,42 +75,33 @@
         display: flex;
         padding-left: 20px;
         font-size: 20px;
-        height: 100%;
-        width: 420px;
+        height: 100%;        
+        width: 410px;
         transition: width 3s;
-
-        // width: 185px;
-        // white-space: nowrap;
-        // overflow: hidden;
-        // text-overflow: ellipsis;
-
+        
         h3 {
           font-size: 20px;
           margin-bottom: 0px;
         }
 
-        p {
-          display: flex;
-          justify-content: space-between;
+        p {          
           font-size: 15px;
           margin-top: 4px;
           color: grey;
         }
 
         .entree-text {
-          flex: content;
+          flex: content;         
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
 
-          // width: 185px;
-          // white-space: nowrap;
-          // overflow: hidden;
-          // text-overflow: ellipsis;
-
-          p {
-            width: 185px;
+          p {          
+            width: 100%;
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
-            // margin-right: 0px;
+            margin-right: 0px;
           }
         }
 
@@ -122,9 +112,10 @@
         }
 
         &:hover {
-          width: 350px;
+          width: 340px;
 
           .checkmark i {
+            transition: all 3s ease-in-out;
             transform: rotate(360deg);
           }
         }
@@ -139,8 +130,7 @@
         color: #99e2d0;
         background-color: #99e2d0;
 
-        i {
-          transition: all 3s ease-in-out;
+        i {          
           display: flex;
           align-items: center;
           justify-content: center;
@@ -165,7 +155,7 @@
     .maindish {
       overflow: hidden;
       height: 70px;
-      width: 350px;
+      width: 340px;
       box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
       background-color: white;
       border-radius: 15px;
@@ -175,7 +165,7 @@
         padding-left: 20px;
         font-size: 20px;
         height: 100%;
-        width: 420px;
+        width: 410px;
         transition: width 3s;
 
         h3 {
@@ -183,10 +173,8 @@
           margin-bottom: 0px;
         }
 
-        p {
-          // display: flex;
-          // justify-content: space-between;
-          font-size: 14px;
+        p {    
+          font-size: 15px;
           margin-top: 4px;
           color: grey;
         }
@@ -197,8 +185,7 @@
           overflow: hidden;
           text-overflow: ellipsis;
 
-          p {
-            // width: 185px;
+          p {           
             width: 100%;
             white-space: nowrap;
             overflow: hidden;
@@ -214,7 +201,12 @@
         }
 
         &:hover {
-          width: 350px;
+          width: 340px;
+
+          .checkmark i {
+            transition: all 3s ease-in-out;
+            transform: rotate(360deg);
+          }
         }
       }
 
@@ -225,10 +217,9 @@
         height: 70px;
         width: 70px;
         color: #99e2d0;
-        background-color: #99e2d0;
-        // transition: all 0.8s;
+        background-color: #99e2d0;        
 
-        i {
+        i {        
           display: flex;
           align-items: center;
           justify-content: center;
@@ -236,12 +227,9 @@
           width: 30px;
           height: 30px;
           border-radius: 50%;
+          transform: rotate(0deg);
         }
       }
-      // .checkmark:hover {
-      //   transition: all 3s ease-in-out;
-      //   transform: rotate(360deg);
-      // }
     }
   }
 
@@ -257,7 +245,7 @@
     .dessert {
       overflow: hidden;
       height: 70px;
-      width: 350px;
+      width: 340px;
       box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
       background-color: white;
       border-radius: 15px;
@@ -267,7 +255,7 @@
         padding-left: 20px;
         font-size: 20px;
         height: 100%;
-        width: 420px;
+        width: 410px;
         transition: width 3s;
 
         h3 {
@@ -275,9 +263,7 @@
           margin-bottom: 0px;
         }
 
-        p {
-          display: flex;
-          justify-content: space-between;
+        p {       
           font-size: 15px;
           margin-top: 4px;
           color: grey;
@@ -285,9 +271,12 @@
 
         .entree-text {
           flex: content;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
 
           p {
-            width: 185px;
+            width: 100%;
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
@@ -302,7 +291,12 @@
         }
 
         &:hover {
-          width: 350px;
+          width: 340px;
+
+          .checkmark i {
+            transition: all 3s ease-in-out;
+            transform: rotate(360deg);
+          }
         }
       }
 
@@ -313,8 +307,7 @@
         height: 70px;
         width: 70px;
         color: #99e2d0;
-        background-color: #99e2d0;
-        // transition: all 0.8s;
+        background-color: #99e2d0;     
 
         i {
           display: flex;
@@ -326,10 +319,6 @@
           border-radius: 50%;
         }
       }
-      // .checkmark:hover {
-      //   transition: all 3s ease-in-out;
-      //   transform: rotate(360deg);
-      // }
     }
   }
 
@@ -340,9 +329,7 @@
     background-image: linear-gradient(#ff79da, #9356dc);
     color: white;
     height: 60px;
-    width: 230px;
-    // text-align: center;
-
+    width: 230px; 
     margin: 30px 0px 30px 0px;
     font-size: 18px;
     position: relative;
@@ -413,270 +400,24 @@
       flex-direction: column;
       align-items: center;
       width: 100%;
-      margin-bottom: 5px;
-      gap: 20px;
-
-      .entree {
-        overflow: hidden;
-        height: 70px;
-        width: 350px;
-        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-        background-color: white;
-        border-radius: 15px;
-        // margin-top: 10px;
-
-        .content {
-          display: flex;
-          padding-left: 20px;
-          font-size: 20px;
-          height: 100%;
-          width: 420px;
-          transition: width 3s;
-
-          h3 {
-            font-size: 20px;
-            margin-bottom: 0px;
-          }
-
-          p {
-            display: flex;
-            justify-content: space-between;
-            font-size: 15px;
-            margin-top: 4px;
-            color: grey;
-          }
-
-          .entree-text {
-            flex: content;
-
-            p {
-              width: 185px;
-              white-space: nowrap;
-              overflow: hidden;
-              text-overflow: ellipsis;
-              // margin-right: 0px;
-            }
-          }
-
-          .entree-price {
-            align-self: flex-end;
-            margin-bottom: 4px;
-            margin-right: 20px;
-          }
-
-          &:hover {
-            width: 350px;
-          }
-        }
-
-        .checkmark {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          height: 70px;
-          width: 70px;
-          color: #99e2d0;
-          background-color: #99e2d0;
-
-          i {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: white;
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-          }
-        }
-
-        // .checkmark:hover {
-        //   transition: all 3s ease-in-out;
-        //   transform: rotate(360deg);
-        // }
-      }
     }
-
+    
     /* MAIN DISHES */
     .maindishes {
       display: flex;
       flex-direction: column;
       align-items: center;
       width: 100%;
-      margin-bottom: 5px;
-      gap: 20px;
-
-      .maindish {
-        overflow: hidden;
-        height: 70px;
-        width: 350px;
-        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-        background-color: white;
-        border-radius: 15px;
-
-        .content {
-          display: flex;
-          padding-left: 20px;
-          font-size: 20px;
-          height: 100%;
-          width: 420px;
-          transition: width 3s;
-
-          h3 {
-            font-size: 20px;
-            margin-bottom: 0px;
-          }
-
-          p {
-            display: flex;
-            justify-content: space-between;
-            font-size: 14px;
-            margin-top: 4px;
-            color: grey;
-          }
-
-          .entree-text {
-            // flex: content;
-            width: 100%;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-
-            p {
-              // width: 185px;
-              width: 100%;
-              white-space: nowrap;
-              overflow: hidden;
-              text-overflow: ellipsis;
-              margin-right: 0px;
-            }
-          }
-
-          .entree-price {
-            align-self: flex-end;
-            margin-bottom: 4px;
-            margin-right: 20px;
-          }
-
-          &:hover {
-            width: 350px;
-          }
-        }
-
-        .checkmark {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          height: 70px;
-          width: 70px;
-          color: #99e2d0;
-          background-color: #99e2d0;
-          // transition: all 0.8s;
-
-          i {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: white;
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-          }
-        }
-        // .checkmark:hover {
-        //   transition: all 3s ease-in-out;
-        //   transform: rotate(360deg);
-        // }
-      }
     }
-
+    
     /* DESSERTS */
     .desserts {
       display: flex;
       flex-direction: column;
       align-items: center;
       width: 100%;
-      margin-bottom: 5px;
-      gap: 20px;
-
-      .dessert {
-        overflow: hidden;
-        height: 70px;
-        width: 350px;
-        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-        background-color: white;
-        border-radius: 15px;
-
-        .content {
-          display: flex;
-          padding-left: 20px;
-          font-size: 20px;
-          height: 100%;
-          width: 420px;
-          transition: width 3s;
-
-          h3 {
-            font-size: 20px;
-            margin-bottom: 0px;
-          }
-
-          p {
-            display: flex;
-            justify-content: space-between;
-            font-size: 15px;
-            margin-top: 4px;
-            color: grey;
-          }
-
-          .entree-text {
-            flex: content;
-
-            p {
-              width: 185px;
-              white-space: nowrap;
-              overflow: hidden;
-              text-overflow: ellipsis;
-              margin-right: 0px;
-            }
-          }
-
-          .entree-price {
-            align-self: flex-end;
-            margin-bottom: 4px;
-            margin-right: 20px;
-          }
-
-          &:hover {
-            width: 350px;
-          }
-        }
-
-        .checkmark {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          height: 70px;
-          width: 70px;
-          color: #99e2d0;
-          background-color: #99e2d0;
-          // transition: all 0.8s;
-
-          i {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: white;
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-          }
-        }
-        // .checkmark:hover {
-        //   transition: all 3s ease-in-out;
-        //   transform: rotate(360deg);
-        // }
-      }
     }
-
+    
     /* Order Button */
     .order {
       border-radius: 30px;
@@ -736,6 +477,9 @@
     }
 
     h2 {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
       width: 100%;
       padding-left: 0;
       color: grey;
@@ -759,85 +503,6 @@
       width: 100%;
       margin-bottom: 5px;
       gap: 20px;
-
-      .entree {
-        overflow: hidden;
-        height: 70px;
-        width: 350px;
-        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-        background-color: white;
-        border-radius: 15px;
-        // margin-top: 10px;
-
-        .content {
-          display: flex;
-          padding-left: 20px;
-          font-size: 20px;
-          height: 100%;
-          width: 420px;
-          transition: width 3s;
-
-          h3 {
-            font-size: 20px;
-            margin-bottom: 0px;
-          }
-
-          p {
-            display: flex;
-            justify-content: space-between;
-            font-size: 15px;
-            margin-top: 4px;
-            color: grey;
-          }
-
-          .entree-text {
-            flex: content;
-
-            p {
-              width: 185px;
-              white-space: nowrap;
-              overflow: hidden;
-              text-overflow: ellipsis;
-              // margin-right: 0px;
-            }
-          }
-
-          .entree-price {
-            align-self: flex-end;
-            margin-bottom: 4px;
-            margin-right: 20px;
-          }
-
-          &:hover {
-            width: 350px;
-          }
-        }
-
-        .checkmark {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          height: 70px;
-          width: 70px;
-          color: #99e2d0;
-          background-color: #99e2d0;
-
-          i {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: white;
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-          }
-        }
-
-        // .checkmark:hover {
-        //   transition: all 3s ease-in-out;
-        //   transform: rotate(360deg);
-        // }
-      }
     }
 
     /* MAIN DISHES */
@@ -848,84 +513,6 @@
       width: 100%;
       margin-bottom: 5px;
       gap: 20px;
-
-      .maindish {
-        overflow: hidden;
-        height: 70px;
-        width: 350px;
-        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-        background-color: white;
-        border-radius: 15px;
-
-        .content {
-          display: flex;
-          padding-left: 20px;
-          font-size: 20px;
-          height: 100%;
-          width: 420px;
-          transition: width 3s;
-
-          h3 {
-            font-size: 20px;
-            margin-bottom: 0px;
-          }
-
-          p {
-            display: flex;
-            justify-content: space-between;
-            font-size: 14px;
-            margin-top: 4px;
-            color: grey;
-          }
-
-          .entree-text {
-            flex: content;
-
-            p {
-              width: 185px;
-              white-space: nowrap;
-              overflow: hidden;
-              text-overflow: ellipsis;
-              margin-right: 0px;
-            }
-          }
-
-          .entree-price {
-            align-self: flex-end;
-            margin-bottom: 4px;
-            margin-right: 20px;
-          }
-
-          &:hover {
-            width: 350px;
-          }
-        }
-
-        .checkmark {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          height: 70px;
-          width: 70px;
-          color: #99e2d0;
-          background-color: #99e2d0;
-          // transition: all 0.8s;
-
-          i {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: white;
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-          }
-        }
-        // .checkmark:hover {
-        //   transition: all 3s ease-in-out;
-        //   transform: rotate(360deg);
-        // }
-      }
     }
 
     /* DESSERTS */
@@ -936,84 +523,6 @@
       width: 100%;
       margin-bottom: 5px;
       gap: 20px;
-
-      .dessert {
-        overflow: hidden;
-        height: 70px;
-        width: 350px;
-        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-        background-color: white;
-        border-radius: 15px;
-
-        .content {
-          display: flex;
-          padding-left: 20px;
-          font-size: 20px;
-          height: 100%;
-          width: 420px;
-          transition: width 3s;
-
-          h3 {
-            font-size: 20px;
-            margin-bottom: 0px;
-          }
-
-          p {
-            display: flex;
-            justify-content: space-between;
-            font-size: 15px;
-            margin-top: 4px;
-            color: grey;
-          }
-
-          .entree-text {
-            flex: content;
-
-            p {
-              width: 185px;
-              white-space: nowrap;
-              overflow: hidden;
-              text-overflow: ellipsis;
-              margin-right: 0px;
-            }
-          }
-
-          .entree-price {
-            align-self: flex-end;
-            margin-bottom: 4px;
-            margin-right: 20px;
-          }
-
-          &:hover {
-            width: 350px;
-          }
-        }
-
-        .checkmark {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          height: 70px;
-          width: 70px;
-          color: #99e2d0;
-          background-color: #99e2d0;
-          // transition: all 0.8s;
-
-          i {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: white;
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-          }
-        }
-        // .checkmark:hover {
-        //   transition: all 3s ease-in-out;
-        //   transform: rotate(360deg);
-        // }
-      }
     }
 
     /* Order Button */
@@ -1023,9 +532,7 @@
       background-image: linear-gradient(#ff79da, #9356dc);
       color: white;
       height: 60px;
-      width: 230px;
-      // text-align: center;
-
+      width: 230px;      
       margin: 30px 0px 30px 0px;
       font-size: 18px;
       position: relative;
@@ -1097,7 +604,6 @@
   }
 
   /* Within Contact Form */
-
   @include breakpoint(tablet) {
     background-color: orange;
   }
