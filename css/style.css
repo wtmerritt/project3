@@ -618,6 +618,12 @@ header {
 @media (min-width: 600px) {
   .options {
     background-color: orange;
+    /*  Main Image */
+  }
+  .options img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
   }
   .options h2 {
     display: flex;
@@ -646,6 +652,12 @@ header {
 @media (min-width: 992px) {
   .options {
     background-color: red;
+    /*  Main Image */
+  }
+  .options img {
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
   }
   .options h2 {
     display: flex;
@@ -877,7 +889,7 @@ header {
 }
 .fullmenu .entrees .entree .content {
   display: flex;
-  padding-left: 20px;
+  padding-left: 10px;
   font-size: 20px;
   height: 100%;
   width: 410px;
@@ -945,7 +957,7 @@ header {
 }
 .fullmenu .maindishes .maindish {
   overflow: hidden;
-  height: 70px;
+  height: 90px;
   width: 340px;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   background-color: white;
@@ -953,7 +965,7 @@ header {
 }
 .fullmenu .maindishes .maindish .content {
   display: flex;
-  padding-left: 20px;
+  padding-left: 10px;
   font-size: 20px;
   height: 100%;
   width: 410px;
@@ -970,9 +982,9 @@ header {
 }
 .fullmenu .maindishes .maindish .content .entree-text {
   flex: content;
-  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  margin-bottom: 5px;
 }
 .fullmenu .maindishes .maindish .content .entree-text p {
   width: 100%;
@@ -997,7 +1009,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 70px;
+  height: 90px;
   width: 70px;
   color: #99e2d0;
   background-color: #99e2d0;
@@ -1022,7 +1034,7 @@ header {
 }
 .fullmenu .desserts .dessert {
   overflow: hidden;
-  height: 70px;
+  height: 85px;
   width: 340px;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   background-color: white;
@@ -1030,28 +1042,27 @@ header {
 }
 .fullmenu .desserts .dessert .content {
   display: flex;
-  padding-left: 20px;
+  padding-left: 10px;
   font-size: 20px;
   height: 100%;
   width: 410px;
   transition: width 3s;
 }
-.fullmenu .desserts .dessert .content h3 {
-  font-size: 20px;
-  margin-bottom: 0px;
-}
-.fullmenu .desserts .dessert .content p {
-  font-size: 15px;
-  margin-top: 4px;
-  color: grey;
-}
 .fullmenu .desserts .dessert .content .entree-text {
   flex: content;
-  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.fullmenu .desserts .dessert .content .entree-text h3 {
+  font-size: 20px;
+  margin-bottom: 0;
+  width: 265px;
+  margin-bottom: 0px;
+}
 .fullmenu .desserts .dessert .content .entree-text p {
+  font-size: 15px;
+  margin-top: 4px;
+  color: grey;
   width: 100%;
   white-space: nowrap;
   overflow: hidden;
@@ -1074,7 +1085,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 70px;
+  height: 85px;
   width: 70px;
   color: #99e2d0;
   background-color: #99e2d0;
