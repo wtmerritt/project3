@@ -70,6 +70,11 @@
       box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
       background-color: white;
       border-radius: 15px;
+      /* Page Loader */
+      animation: entree-load 2s ease-in;
+      animation-fill-mode: forwards;
+      transform: translateY(-200%);
+      opacity: 0;
 
       .content {
         display: flex;
@@ -140,6 +145,18 @@
           border-radius: 50%;
         }
       }
+
+      @keyframes entree-load {
+        0% {
+          transform: translateY(-200%);
+          opacity: 0;
+        }
+
+        100% {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
     }
   }
 
@@ -154,12 +171,16 @@
 
     .maindish {
       overflow: hidden;
-      // height: 70px;
       height: 90px;
       width: 340px;
       box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
       background-color: white;
       border-radius: 15px;
+      /* Page Loader */
+      animation: maindish-load 2s ease-in 2s;
+      animation-fill-mode: forwards;
+      transform: translateY(-200%);
+      opacity: 0;
 
       .content {
         display: flex;
@@ -232,6 +253,18 @@
           transform: rotate(0deg);
         }
       }
+
+      @keyframes maindish-load {
+        0% {
+          transform: translateY(-200%);
+          opacity: 0;
+        }
+
+        100% {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
     }
   }
 
@@ -239,7 +272,6 @@
   .desserts {
     display: flex;
     flex-direction: column;
-    // flex-wrap: wrap;
     width: 100%;
     margin-bottom: 5px;
     margin-left: 20px;
@@ -247,61 +279,35 @@
 
     .dessert {
       overflow: hidden;
-      // height: 70px;
       height: 85px;
       width: 340px;
-      // width: 350px;
       box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
       background-color: white;
       border-radius: 15px;
-      // margin: -10px 0 15px 0;
+      /* Page Loader */
+      animation: dessert-load 2s ease-in 4s;
+      animation-fill-mode: forwards;
+      transform: translateY(-200%);
+      opacity: 0;
 
       .content {
         display: flex;
-        // flex-wrap: wrap;
         padding-left: 10px;
         font-size: 20px;
         height: 100%;
         width: 410px;
-        // width: 420px;
         transition: width 3s;
 
-        // h3 {
-        //   font-size: 20px;
-        //   margin-bottom: 0px;
-        // }
-
-        // p {
-        //   font-size: 15px;
-        //   margin-top: 4px;
-        //   color: grey;
-        // }
-
         .entree-text {
-          // margin-left: -10px;
           flex: content;
-          // white-space: nowrap;
-          // white-space: normal;
+
           overflow: hidden;
           text-overflow: ellipsis;
-          // width: 265px;
-          // overflow-wrap: break-word;
 
           h3 {
-            // overflow-wrap: break-word;
-            // display: flex;
-            // justify-content: left;
-            // text-align: start;
             font-size: 20px;
-            // margin: 20px 0 0 0px ;
             margin-bottom: 0;
-            // flex-wrap: wrap;
             width: 265px;
-
-            // width: 100%;
-            // flex-wrap: wrap;
-            // width: 265px;
-            // font-size: 20px;
             margin-bottom: 0px;
           }
 
@@ -309,7 +315,6 @@
             font-size: 15px;
             margin-top: 4px;
             color: grey;
-
             width: 100%;
             white-space: nowrap;
             overflow: hidden;
@@ -337,8 +342,7 @@
       .checkmark {
         display: flex;
         align-items: center;
-        justify-content: center;
-        // height: 70px;
+        justify-content: center; 
         height: 85px;
         width: 70px;
         color: #99e2d0;
@@ -352,6 +356,18 @@
           width: 30px;
           height: 30px;
           border-radius: 50%;
+        }
+      }
+
+      @keyframes dessert-load {
+        0% {
+          transform: translateY(-200%);
+          opacity: 0;
+        }
+
+        100% {
+          transform: translateY(0);
+          opacity: 1;
         }
       }
     }
@@ -460,9 +476,7 @@
       background-image: linear-gradient(#ff79da, #9356dc);
       color: white;
       height: 60px;
-      width: 230px;
-      // text-align: center;
-
+      width: 230px;   
       margin: 30px 0px 30px 0px;
       font-size: 18px;
       position: relative;
@@ -529,15 +543,6 @@
       margin: 0 0;
       margin-bottom: 20px;
     }
-
-    // /*  Main Image */
-    // .options {
-    //   img {
-    //     height: 250px;
-    //     width: 100%;
-    //     object-fit: cover;
-    //   }
-    // }
 
     /* ENTREES */
     .entrees {
