@@ -376,11 +376,6 @@ body {
   }
 }
 @media (min-width: 992px) {
-  .footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
   .footer h2 {
     display: flex;
     align-items: start;
@@ -840,8 +835,6 @@ header {
   position: relative;
   margin-top: -30px;
   /* ENTREES */
-  /* MAIN DISHES */
-  /* DESSERTS */
   /* Order Button */
   /* Within Full Menu */
 }
@@ -886,11 +879,19 @@ header {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   background-color: white;
   border-radius: 15px;
-  /* Page Loader */
-  animation: entree-load 2s ease-in;
-  animation-fill-mode: forwards;
-  transform: translateY(-200%);
-  opacity: 0;
+  margin-bottom: 10px;
+}
+.fullmenu .entrees .entree:nth-child(1) {
+  animation: entree-load 700ms 0ms ease-in forwards;
+}
+.fullmenu .entrees .entree:nth-child(2) {
+  animation: entree-load 700ms 100ms ease-in forwards;
+}
+.fullmenu .entrees .entree:nth-child(3) {
+  animation: entree-load 700ms 200ms ease-in forwards;
+}
+.fullmenu .entrees .entree:nth-child(4) {
+  animation: entree-load 700ms 300ms ease-in forwards;
 }
 .fullmenu .entrees .entree .content {
   display: flex;
@@ -898,24 +899,22 @@ header {
   font-size: 20px;
   height: 100%;
   width: 410px;
-  transition: width 3s;
-}
-.fullmenu .entrees .entree .content h3 {
-  font-size: 20px;
-  margin-bottom: 0px;
-}
-.fullmenu .entrees .entree .content p {
-  font-size: 15px;
-  margin-top: 4px;
-  color: grey;
+  transition: width 1500ms;
 }
 .fullmenu .entrees .entree .content .entree-text {
   flex: content;
-  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.fullmenu .entrees .entree .content .entree-text h3 {
+  font-size: 20px;
+  margin-bottom: 0;
+  width: 265px;
+}
 .fullmenu .entrees .entree .content .entree-text p {
+  font-size: 15px;
+  margin-top: 4px;
+  color: grey;
   width: 100%;
   white-space: nowrap;
   overflow: hidden;
@@ -931,7 +930,7 @@ header {
   width: 340px;
 }
 .fullmenu .entrees .entree .content:hover .checkmark i {
-  transition: all 3s ease-in-out;
+  transition: all 1500ms ease-in-out;
   transform: rotate(360deg);
 }
 .fullmenu .entrees .entree .checkmark {
@@ -954,189 +953,7 @@ header {
 }
 @keyframes entree-load {
   0% {
-    transform: translateY(-200%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-.fullmenu .maindishes {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  margin-bottom: 5px;
-  margin-left: 20px;
-  gap: 20px;
-}
-.fullmenu .maindishes .maindish {
-  overflow: hidden;
-  height: 90px;
-  width: 340px;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-  background-color: white;
-  border-radius: 15px;
-  /* Page Loader */
-  animation: maindish-load 2s ease-in 2s;
-  animation-fill-mode: forwards;
-  transform: translateY(-200%);
-  opacity: 0;
-}
-.fullmenu .maindishes .maindish .content {
-  display: flex;
-  padding-left: 10px;
-  font-size: 20px;
-  height: 100%;
-  width: 410px;
-  transition: width 3s;
-}
-.fullmenu .maindishes .maindish .content h3 {
-  font-size: 20px;
-  margin-bottom: 0px;
-}
-.fullmenu .maindishes .maindish .content p {
-  font-size: 15px;
-  margin-top: 4px;
-  color: grey;
-}
-.fullmenu .maindishes .maindish .content .entree-text {
-  flex: content;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  margin-bottom: 5px;
-}
-.fullmenu .maindishes .maindish .content .entree-text p {
-  width: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  margin-right: 0px;
-}
-.fullmenu .maindishes .maindish .content .entree-price {
-  align-self: flex-end;
-  margin-bottom: 4px;
-  margin-right: 20px;
-}
-.fullmenu .maindishes .maindish .content:hover {
-  width: 340px;
-}
-.fullmenu .maindishes .maindish .content:hover .checkmark i {
-  transition: all 3s ease-in-out;
-  transform: rotate(360deg);
-}
-.fullmenu .maindishes .maindish .checkmark {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 90px;
-  width: 70px;
-  color: #99e2d0;
-  background-color: #99e2d0;
-}
-.fullmenu .maindishes .maindish .checkmark i {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: white;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  transform: rotate(0deg);
-}
-@keyframes maindish-load {
-  0% {
-    transform: translateY(-200%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-.fullmenu .desserts {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  margin-bottom: 5px;
-  margin-left: 20px;
-  gap: 20px;
-}
-.fullmenu .desserts .dessert {
-  overflow: hidden;
-  height: 85px;
-  width: 340px;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-  background-color: white;
-  border-radius: 15px;
-  /* Page Loader */
-  animation: dessert-load 2s ease-in 4s;
-  animation-fill-mode: forwards;
-  transform: translateY(-200%);
-  opacity: 0;
-}
-.fullmenu .desserts .dessert .content {
-  display: flex;
-  padding-left: 10px;
-  font-size: 20px;
-  height: 100%;
-  width: 410px;
-  transition: width 3s;
-}
-.fullmenu .desserts .dessert .content .entree-text {
-  flex: content;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.fullmenu .desserts .dessert .content .entree-text h3 {
-  font-size: 20px;
-  margin-bottom: 0;
-  width: 265px;
-  margin-bottom: 0px;
-}
-.fullmenu .desserts .dessert .content .entree-text p {
-  font-size: 15px;
-  margin-top: 4px;
-  color: grey;
-  width: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  margin-right: 0px;
-}
-.fullmenu .desserts .dessert .content .entree-price {
-  align-self: flex-end;
-  margin-bottom: 4px;
-  margin-right: 20px;
-}
-.fullmenu .desserts .dessert .content:hover {
-  width: 340px;
-}
-.fullmenu .desserts .dessert .content:hover .checkmark i {
-  transition: all 3s ease-in-out;
-  transform: rotate(360deg);
-}
-.fullmenu .desserts .dessert .checkmark {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 85px;
-  width: 70px;
-  color: #99e2d0;
-  background-color: #99e2d0;
-}
-.fullmenu .desserts .dessert .checkmark i {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: white;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-}
-@keyframes dessert-load {
-  0% {
-    transform: translateY(-200%);
+    transform: translateY(20px);
     opacity: 0;
   }
   100% {

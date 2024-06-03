@@ -1,4 +1,3 @@
-
 /* Footer Links */
 .footer {
   // max-width: 375px;
@@ -43,7 +42,7 @@
 
   /* Within Footer Section */
   @include breakpoint(tablet) {
-    // background-color: orange;   
+    // background-color: orange;
 
     h2 {
       display: flex;
@@ -63,9 +62,5 @@
       align-items: start;
       margin-left: 0px;
     }
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
 }
