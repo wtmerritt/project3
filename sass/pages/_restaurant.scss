@@ -65,14 +65,12 @@
 
     .entree {
       overflow: hidden;
-      // height: 90px;
-      height: 70px;
+      max-height: 90px;
       width: 340px;
       box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
       background-color: white;
       border-radius: 15px;
       margin-bottom: 10px;
-      
 
       &:nth-child(1) {
         animation: entree-load 700ms 0ms ease-in forwards;
@@ -94,12 +92,12 @@
         display: flex;
         padding-left: 10px;
         font-size: 20px;
-        height: 100%;        
+        height: 100%;
         width: 410px;
         transition: width 1500ms;
 
         .entree-text {
-          flex: content;          
+          flex: content;
           overflow: hidden;
           text-overflow: ellipsis;
 
@@ -117,15 +115,14 @@
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
-            margin-right: 0px;          
+            margin-right: 0px;
           }
         }
 
         .entree-price {
           align-self: flex-end;
-          margin-bottom: 4px;
+          margin-bottom: 10px;
           margin-right: 20px;
-          
         }
 
         &:hover {
@@ -142,8 +139,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        // height: 90px;
-        height: 70px;
+        max-height: 90px;
         width: 70px;
         color: #99e2d0;
         background-color: #99e2d0;
@@ -171,7 +167,6 @@
       }
     }
   }
-  
 
   /* Order Button */
   .order {
@@ -212,7 +207,7 @@
 
   /* Within Full Menu */
   @include breakpoint(tablet) {
-    background-color: orange;
+    // background-color: orange;
 
     h1 {
       display: flex;
@@ -308,7 +303,7 @@
   }
 
   @include breakpoint(desktop) {
-    background-color: red;
+    // background-color: red;
 
     h1 {
       display: flex;
@@ -454,10 +449,10 @@
 
   /* Within Contact Form */
   @include breakpoint(tablet) {
-    background-color: orange;
+    // background-color: orange;
   }
 
   @include breakpoint(desktop) {
-    background-color: red;
+    // background-color: red;
   }
 }

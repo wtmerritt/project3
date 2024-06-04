@@ -498,17 +498,6 @@ header {
   z-index: -1;
   transition: opacity 250ms;
 }
-@media (min-width: 600px) {
-  .explore {
-    background-color: orange;
-  }
-}
-@media (min-width: 992px) {
-  .explore {
-    background-color: red;
-  }
-}
-
 /* Options from Home Page */
 .options {
   /* Within Selection Section */
@@ -612,7 +601,6 @@ header {
 }
 @media (min-width: 600px) {
   .options {
-    background-color: orange;
     /*  Main Image */
   }
   .options img {
@@ -646,7 +634,6 @@ header {
 }
 @media (min-width: 992px) {
   .options {
-    background-color: red;
     /*  Main Image */
   }
   .options img {
@@ -766,9 +753,6 @@ header {
   opacity: 1;
 }
 @media (min-width: 600px) {
-  .restaurants {
-    background-color: orange;
-  }
   .restaurants h2 {
     display: flex;
     flex-wrap: wrap;
@@ -783,9 +767,6 @@ header {
   }
 }
 @media (min-width: 992px) {
-  .restaurants {
-    background-color: red;
-  }
   .restaurants h2 {
     display: flex;
     align-items: start;
@@ -874,7 +855,7 @@ header {
 }
 .fullmenu .entrees .entree {
   overflow: hidden;
-  height: 70px;
+  max-height: 90px;
   width: 340px;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   background-color: white;
@@ -923,7 +904,7 @@ header {
 }
 .fullmenu .entrees .entree .content .entree-price {
   align-self: flex-end;
-  margin-bottom: 4px;
+  margin-bottom: 10px;
   margin-right: 20px;
 }
 .fullmenu .entrees .entree .content:hover {
@@ -937,7 +918,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 70px;
+  max-height: 90px;
   width: 70px;
   color: #99e2d0;
   background-color: #99e2d0;
@@ -994,7 +975,6 @@ header {
 }
 @media (min-width: 600px) {
   .fullmenu {
-    background-color: orange;
     /* ENTREES */
     /* MAIN DISHES */
     /* DESSERTS */
@@ -1078,7 +1058,6 @@ header {
 }
 @media (min-width: 992px) {
   .fullmenu {
-    background-color: red;
     /* ENTREES */
     /* MAIN DISHES */
     /* DESSERTS */
@@ -1204,16 +1183,6 @@ header {
 .contact button:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   background-image: linear-gradient(#ff93e1, #a16be0);
-}
-@media (min-width: 600px) {
-  .contact {
-    background-color: orange;
-  }
-}
-@media (min-width: 992px) {
-  .contact {
-    background-color: red;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -128,11 +128,11 @@ header {
   }
 
   @include breakpoint(tablet) {
-    background-color: orange;
+    // background-color: orange;
   }
 
   @include breakpoint(desktop) {
-    background-color: red;
+    // background-color: red;
   }
 }
 
@@ -248,7 +248,7 @@ header {
 
   /* Within Selection Section */
   @include breakpoint(tablet) {
-    background-color: orange;
+    // background-color: orange;
 
     /*  Main Image */
     img {
@@ -286,7 +286,7 @@ header {
   }
 
   @include breakpoint(desktop) {
-    background-color: red;
+    // background-color: red;
 
     /*  Main Image */
     img {
@@ -427,7 +427,7 @@ header {
 
   /* Within Restaurants Section */
   @include breakpoint(tablet) {
-    background-color: orange;
+    // background-color: orange;
 
     h2 {
       display: flex;
@@ -445,7 +445,7 @@ header {
   }
 
   @include breakpoint(desktop) {
-    background-color: red;
+    // background-color: red;
 
     h2 {
       display: flex;
