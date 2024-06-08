@@ -529,6 +529,9 @@ header {
   background-color: #f2eafb;
   cursor: pointer;
 }
+.options .selection .restaurant:hover .cell i {
+  color: #9356dc;
+}
 .options .selection .restaurant .number i {
   display: flex;
   justify-content: center;
@@ -572,6 +575,9 @@ header {
   background-color: #f2eafb;
   cursor: pointer;
 }
+.options .selection .restaurant2:hover .cell i {
+  color: #9356dc;
+}
 .options .selection .restaurant2 .number i {
   display: flex;
   justify-content: center;
@@ -590,7 +596,7 @@ header {
   justify-content: center;
   align-items: center;
   font-size: 20px;
-  color: #9356dc;
+  color: grey;
   margin-right: 12px;
 }
 .options .selection .restaurant2 .phase {
